@@ -1,51 +1,51 @@
 {
-  "common_declaration : page Group [1, 7]": {
-    "insurance_type": "common_declaration : page Group [1, 7]",
+  "common_declaration : page Group [1]": {
+    "insurance_type": "common_declaration : page Group [1]",
     "extracted_fields": {
       "Coverages_and_Premium": {
         "value": [
           {
-            "Section": "1",
+            "Section": 1,
             "Coverage": "Property",
             "Premium": "$878.00"
           },
           {
-            "Section": "2",
+            "Section": 2,
             "Coverage": "Liability",
             "Premium": "No Coverage"
           },
           {
-            "Section": "3",
+            "Section": 3,
             "Coverage": "Crime and Fidelity",
             "Premium": "$387.00"
           },
           {
-            "Section": "4",
+            "Section": 4,
             "Coverage": "Inland Marine",
             "Premium": "$6,002.00"
           },
           {
-            "Section": "5",
+            "Section": 5,
             "Coverage": "Automobile",
             "Premium": "$60,130.00"
           },
           {
-            "Section": "6",
+            "Section": 6,
             "Coverage": "Workers' Compensation",
             "Premium": "No Coverage"
           },
           {
-            "Section": "7",
+            "Section": 7,
             "Coverage": "Umbrella",
             "Premium": "No Coverage"
           },
           {
-            "Section": "8",
-            "Coverage": "Other Cybersolutions",
+            "Section": 8,
+            "Coverage": "Other",
             "Premium": "$295.00"
           }
         ],
-        "confidence": 0.98,
+        "confidence": 0.99,
         "source_page_numbers": [
           1
         ]
@@ -58,356 +58,177 @@
         ]
       },
       "name_of_insured": {
-        "value": [
-          "CORNERSTONE CONTRACTING COMPANY LLC DBA CORNERSTONE HOMES"
-        ],
-        "confidence": 0.95,
+        "value": "CORNERSTONE CONTRACTING COMPANY LLC DBA CORNERSTONE HOMES",
+        "confidence": 0.99,
         "source_page_numbers": [
           1
         ]
       },
       "name_of_producer": {
-        "value": [
-          "COMMERCIAL RISK SOLUTIONS, INC."
-        ],
-        "confidence": 0.95,
+        "value": "COMMERCIAL RISK SOLUTIONS, INC.",
+        "confidence": 0.99,
         "source_page_numbers": [
           1
         ]
       },
       "address_of_servicing_company": {
-        "value": [
-          "9780 S MERIDIAN BLVD STE 400 ENGLEWOOD, CO 80112-6072"
-        ],
-        "confidence": 0.95,
+        "value": "9780 S MERIDIAN BLVD STE 400 ENGLEWOOD, CO 80112-6072",
+        "confidence": 0.98,
         "source_page_numbers": [
           1
         ]
       },
       "number_of_servicing_company": {
-        "value": [
-          "303-996-7800"
-        ],
-        "confidence": 0.95,
+        "value": "303-996-7800",
+        "confidence": 0.98,
         "source_page_numbers": [
           1
         ]
       }
     }
   },
-  "common_declaration : page Group [95]": {
-    "insurance_type": "common_declaration : page Group [95]",
-    "extracted_fields": {
-      "Coverages_and_Premium": {
-        "value": [],
-        "confidence": 0.0,
-        "source_page_numbers": [
-          95
-        ]
-      },
-      "total_policy_premium_ammount": {
-        "value": [],
-        "confidence": 0.0,
-        "source_page_numbers": [
-          95
-        ]
-      },
-      "name_of_insured": {
-        "value": [
-          "CORNERSTONE CONTRACTING COMPANY LLC DBA CORNERSTONE HOMES"
-        ],
-        "confidence": 0.95,
-        "source_page_numbers": [
-          95
-        ]
-      },
-      "name_of_producer": {
-        "value": [
-          "COMMERCIAL RISK SOLUTIONS, INC."
-        ],
-        "confidence": 0.95,
-        "source_page_numbers": [
-          95
-        ]
-      },
-      "address_of_servicing_company": {
-        "value": [
-          "9780 S MERIDIAN BLVD STE 400, ENGLEWOOD CO 80112-6072"
-        ],
-        "confidence": 0.95,
-        "source_page_numbers": [
-          95
-        ]
-      },
-      "number_of_servicing_company": {
-        "value": [
-          "(303)996-7800"
-        ],
-        "confidence": 0.9,
-        "source_page_numbers": [
-          95
-        ]
-      }
-    }
-  },
-  "common_declaration : page Group [131]": {
-    "insurance_type": "common_declaration : page Group [131]",
-    "extracted_fields": {
-      "Coverages_and_Premium": {
-        "value": null,
-        "confidence": 0,
-        "source_page_numbers": [
-          131
-        ]
-      },
-      "total_policy_premium_ammount": {
-        "value": null,
-        "confidence": 0,
-        "source_page_numbers": [
-          131
-        ]
-      },
-      "name_of_insured": {
-        "value": [
-          "CORNERSTONE CONTRACTING COMPANY LLC DBA CORNERSTONE HOMES",
-          "COTF LLC DBA COLORADO TIMBERFRAME",
-          "ODEN EXCAVATING LLC"
-        ],
-        "confidence": 0.9,
-        "source_page_numbers": [
-          131
-        ]
-      },
-      "name_of_producer": {
-        "value": [
-          "COMMERCIAL RISK SOLUTIONS, INC."
-        ],
-        "confidence": 0.8,
-        "source_page_numbers": [
-          131
-        ]
-      },
-      "address_of_servicing_company": {
-        "value": [
-          "9780 S MERIDIAN BLVD STE 400, ENGLEWOOD CO 80112-6072"
-        ],
-        "confidence": 0.85,
-        "source_page_numbers": [
-          131
-        ]
-      },
-      "number_of_servicing_company": {
-        "value": [
-          "(720)200-3700"
-        ],
-        "confidence": 0.95,
-        "source_page_numbers": [
-          131
-        ]
-      }
-    }
-  },
-  "common_declaration : page Group [282, 283]": {
-    "insurance_type": "common_declaration : page Group [282, 283]",
-    "extracted_fields": {
-      "Coverages_and_Premium": {
-        "value": [
-          "Terrorism Premium (Certified Acts) Waived"
-        ],
-        "confidence": 0.9,
-        "source_page_numbers": [
-          282,
-          283
-        ]
-      },
-      "name_of_insured": {
-        "value": [
-          "CORNERSTONE CONTRACTING",
-          "CORNERSTONE CONTRACTING COMPANY LLC DBA CORNERSTONE HOMES",
-          "COTF LLC DBA COLORADO TIMBERFRAME",
-          "ODEN EXCAVATING LLC"
-        ],
-        "confidence": 0.95,
-        "source_page_numbers": [
-          282,
-          283
-        ]
-      },
-      "total_policy_premium_ammount": {
-        "value": [
-          null
-        ],
-        "confidence": 0,
-        "source_page_numbers": [
-          283
-        ]
-      },
-      "name_of_producer": {
-        "value": [
-          null,
-          "COMMERCIAL RISK SOLUTIONS, INC."
-        ],
-        "confidence": 0.9,
-        "source_page_numbers": [
-          283
-        ]
-      },
-      "address_of_servicing_company": {
-        "value": [
-          null,
-          "9780 S MERIDIAN BLVD STE 400",
-          "ENGLEWOOD CO 80112-6072",
-          "1005 S 120TH ST STE 201",
-          "LAFAYETTE CO 80026-2463"
-        ],
-        "confidence": 0.85,
-        "source_page_numbers": [
-          283
-        ]
-      },
-      "number_of_servicing_company": {
-        "value": [
-          null,
-          "(720)200-3700"
-        ],
-        "confidence": 0.95,
-        "source_page_numbers": [
-          283
-        ]
-      }
-    }
-  },
-  "Commercial Property : page Group [3, 6, 8, 12, 18, 22, 31]": {
-    "insurance_type": "Commercial Property : page Group [3, 6, 8, 12, 18, 22, 31]",
+  "Commercial Property : page Group [3, 8, 12, 18, 22, 31, 6, 7]": {
+    "insurance_type": "Commercial Property : page Group [3, 8, 12, 18, 22, 31, 6, 7]",
     "extracted_fields": {
       "ACORD_125_applicant_info": {
         "insured_name": {
           "value": [
+            "CORNERSTONE CONTRACTING",
             "CORNERSTONE CONTRACTING COMPANY LLC"
           ],
           "confidence": 0.98,
           "source_page_numbers": [
-            3
+            3,
+            7
           ]
         },
         "DBA_name": {
           "value": [
             "CORNERSTONE HOMES"
           ],
-          "confidence": 0.97,
+          "confidence": 0.95,
           "source_page_numbers": [
-            3
+            3,
+            7
           ]
         },
         "mailing_address": {
           "value": [
-            "1005 S 120TH ST STE 201, LAFAYETTE, CO 80026-2463"
+            "1005 S 120TH ST STE 201, LAFAYETTE CO 80026-2463",
+            "1005 S 120TH ST STE 201 LAFAYETTE CO 80026-2463"
           ],
           "confidence": 0.95,
           "source_page_numbers": [
-            3
+            3,
+            7
           ]
         },
         "business_structure": {
           "value": [
             "LLC"
           ],
-          "confidence": 0.96,
-          "source_page_numbers": [
-            3
-          ]
-        }
-      },
-      "ACORD_125_policy_info": {
-        "policy_number": {
-          "value": [
-            "6A5-84-64-25",
-            "6A5-84-64----25",
-            "6A5-84-64---25"
-          ],
           "confidence": 0.99,
           "source_page_numbers": [
-            3,
-            6,
-            8
-          ]
-        },
-        "effective_date": {
-          "value": [
-            "2024-08-13",
-            "08/13/24"
-          ],
-          "confidence": 0.99,
-          "source_page_numbers": [
-            3,
-            6,
-            8
-          ]
-        },
-        "expiration_date": {
-          "value": [
-            "2025-08-13",
-            "08/13/25"
-          ],
-          "confidence": 0.99,
-          "source_page_numbers": [
-            3,
-            6,
-            8
-          ]
-        },
-        "billing_type": {
-          "value": [
-            "Direct Bill"
-          ],
-          "confidence": 0.95,
-          "source_page_numbers": [
             3
           ]
         },
-        "premium": {
-          "value": [
-            "$878.00"
-          ],
-          "confidence": 0.97,
-          "source_page_numbers": [
-            3
-          ]
-        },
-        "agency_name": {
-          "value": [
-            "COMMERCIAL RISK SOLUTIONS, INC."
-          ],
-          "confidence": 0.96,
-          "source_page_numbers": [
-            3
-          ]
-        },
-        "agency_code": {
+        "contact_person": {
           "value": [
             "AW 6258"
-          ],
-          "confidence": 0.98,
-          "source_page_numbers": [
-            3
-          ]
-        },
-        "policy_status": {
-          "value": [
-            "Renewal"
           ],
           "confidence": 0.9,
           "source_page_numbers": [
             3
           ]
         },
+        "phone_number": {
+          "value": [
+            "(303)996-7800"
+          ],
+          "confidence": 0.95,
+          "source_page_numbers": [
+            3
+          ]
+        }
+      },
+      "ACORD_125_policy_info": {
+        "agency_name": {
+          "value": [
+            "COMMERCIAL RISK SOLUTIONS, INC."
+          ],
+          "confidence": 0.98,
+          "source_page_numbers": [
+            3,
+            7
+          ]
+        },
+        "agency_code": {
+          "value": [
+            "AW 6258"
+          ],
+          "confidence": 0.9,
+          "source_page_numbers": [
+            3,
+            7
+          ]
+        },
         "carrier_name": {
           "value": [
             "EMPLOYERS MUTUAL CASUALTY COMPANY"
           ],
-          "confidence": 0.95,
+          "confidence": 1.0,
           "source_page_numbers": [
-            8
+            3,
+            8,
+            6,
+            7
+          ]
+        },
+        "policy_number": {
+          "value": [
+            "6A5-84-64-25",
+            "6A5-84-64---25",
+            "6A5-84-64--25"
+          ],
+          "confidence": 0.98,
+          "source_page_numbers": [
+            3,
+            8,
+            6,
+            7
+          ]
+        },
+        "effective_date": {
+          "value": [
+            "08/13/24"
+          ],
+          "confidence": 0.98,
+          "source_page_numbers": [
+            3,
+            8,
+            6,
+            7
+          ]
+        },
+        "expiration_date": {
+          "value": [
+            "08/13/25"
+          ],
+          "confidence": 0.98,
+          "source_page_numbers": [
+            3,
+            8,
+            6,
+            7
+          ]
+        },
+        "premium": {
+          "value": [
+            878.0
+          ],
+          "confidence": 0.97,
+          "source_page_numbers": [
+            3
           ]
         }
       },
@@ -416,16 +237,7 @@
           "value": [
             "1005 S 120TH ST UNITS 201 AND 101 LAFAYETTE, CO 80026-2462"
           ],
-          "confidence": 0.93,
-          "source_page_numbers": [
-            8
-          ]
-        },
-        "building_number": {
-          "value": [
-            "001"
-          ],
-          "confidence": 0.98,
+          "confidence": 0.9,
           "source_page_numbers": [
             8
           ]
@@ -434,32 +246,23 @@
           "value": [
             "001"
           ],
-          "confidence": 0.98,
+          "confidence": 0.9,
           "source_page_numbers": [
             8
           ]
         },
-        "property_description": {
+        "building_number": {
           "value": [
-            "1 STORY FRAME BLDG"
-          ],
-          "confidence": 0.95,
-          "source_page_numbers": [
-            8
-          ]
-        },
-        "construction_type": {
-          "value": [
-            "FRAME"
+            "001"
           ],
           "confidence": 0.9,
           "source_page_numbers": [
             8
           ]
         },
-        "fire_protection_class": {
+        "property_description": {
           "value": [
-            "02"
+            "1 STORY FRAME BLDG IN PROTECTION CLASS 02"
           ],
           "confidence": 0.9,
           "source_page_numbers": [
@@ -470,7 +273,16 @@
           "value": [
             "STORAGE"
           ],
-          "confidence": 0.93,
+          "confidence": 0.8,
+          "source_page_numbers": [
+            8
+          ]
+        },
+        "fire_protection_class": {
+          "value": [
+            "02"
+          ],
+          "confidence": 0.85,
           "source_page_numbers": [
             8
           ]
@@ -479,7 +291,7 @@
           "value": [
             "KEENAN TOMPKINS"
           ],
-          "confidence": 0.95,
+          "confidence": 0.9,
           "source_page_numbers": [
             8
           ]
@@ -488,18 +300,38 @@
           "value": [
             "(303)444-0433"
           ],
-          "confidence": 0.95,
+          "confidence": 0.9,
           "source_page_numbers": [
             8
           ]
         }
       },
       "ACORD_140_coverage_info": {
+        "business_personal_property_limit": {
+          "value": [
+            478.0,
+            null
+          ],
+          "confidence": 0.95,
+          "source_page_numbers": [
+            3
+          ]
+        },
+        "blanket_coverage": {
+          "value": [
+            "Y"
+          ],
+          "confidence": 0.85,
+          "source_page_numbers": [
+            3,
+            8
+          ]
+        },
         "building_limit_of_insurance": {
           "value": [
             "$26,513"
           ],
-          "confidence": 0.92,
+          "confidence": 0.9,
           "source_page_numbers": [
             8
           ]
@@ -530,7 +362,7 @@
           "value": [
             "Replacement Cost"
           ],
-          "confidence": 0.93,
+          "confidence": 0.9,
           "source_page_numbers": [
             8
           ]
@@ -538,113 +370,96 @@
         "deductible": {
           "value": [
             "$1,000",
-            "$500",
             "$250"
           ],
           "confidence": 0.95,
           "source_page_numbers": [
             8,
-            12,
             18,
             22
           ]
-        }
+        },
+        "inflation_guard": {}
       },
       "optional_coverages": {
-        "equipment_breakdown_limit": {
-          "value": [
-            "See Coverage Form"
-          ],
-          "confidence": 0.85,
-          "source_page_numbers": [
-            8
-          ]
-        },
         "business_income_limit": {
           "value": [
+            "Included",
             "$100,000"
           ],
           "confidence": 0.9,
           "source_page_numbers": [
+            3,
             8
           ]
+        },
+        "property_elite_extension": {
+          "value": [
+            400.0
+          ],
+          "confidence": 0.95,
+          "source_page_numbers": [
+            3
+          ]
+        },
+        "equipment_breakdown_limit": {
+          "value": [
+            null
+          ],
+          "confidence": 0,
+          "source_page_numbers": []
         },
         "value_reporting": {
           "value": [
-            "Yes"
+            null
           ],
-          "confidence": 0.8,
-          "source_page_numbers": [
-            8
-          ]
-        },
-        "ordinance_or_law_coverage": {
-          "value": [
-            "Agreed Value"
-          ],
-          "confidence": 0.85,
-          "source_page_numbers": [
-            22
-          ]
+          "confidence": 0,
+          "source_page_numbers": []
         }
       },
-      "additional_interests": {
-        "mortgagee_name": {
-          "value": [
-            "mortgageholder"
-          ],
-          "confidence": 0.85,
-          "source_page_numbers": [
-            22
-          ]
-        }
-      }
+      "additional_interests": {}
     }
   },
   "Commercial Property : page Group [76]": {
     "insurance_type": "Commercial Property : page Group [76]",
     "extracted_fields": {
-      "ACORD_125_applicant_info": {},
-      "ACORD_125_policy_info": {},
-      "ACORD_140_property_info": {},
       "ACORD_140_coverage_info": {
         "deductible": {
           "value": [
-            "The deductible in the Commercial Property Schedule applies unless a separate Equipment Breakdown deductible is shown in a \"Schedule\"",
-            "Deductibles for Each Coverage apply as per schedule",
-            "Multiple deductibles may apply to any one equipment breakdown",
-            "For Equipment Breakdown Coverage, the deductible provision is replaced as described"
+            "The deductible in the Commercial Property Schedule applies unless a separate Equipment Breakdown deductible is shown in a \"Schedule\". If a separate Equipment Breakdown deductible is shown, the following applies: Only as regards Equipment Breakdown Coverage, the Deductible provision in your Coverage Form is deleted and replaced with the following: Deductibles for Each Coverage: Unless otherwise indicated in a \"Schedule\", multiple deductibles may apply to any \"one equipment breakdown\". We will not pay for loss, damage or expense under any coverage until the amount of the covered loss, damage or expense exceeds the deductible amount indicated for that coverage in a \"Schedule\". We will then pay the amount of loss, damage or expense in excess of the applicable deductible amount, subject to the applicable limit."
+          ],
+          "confidence": 0.9,
+          "source_page_numbers": [
+            76
+          ]
+        },
+        "equipment_breakdown_limit": {
+          "value": [
+            "Only as regards Equipment Breakdown Coverage, the Deductible provision in your Coverage Form is deleted and replaced with the following deductibles."
           ],
           "confidence": 0.7,
           "source_page_numbers": [
             76
           ]
         }
-      },
-      "optional_coverages": {},
-      "additional_interests": {}
+      }
     }
   },
-  "Commercial Property : page Group [128, 132, 134, 135, 136]": {
-    "insurance_type": "Commercial Property : page Group [128, 132, 134, 135, 136]",
+  "Commercial Property : page Group [128, 132, 134, 135, 136, 131]": {
+    "insurance_type": "Commercial Property : page Group [128, 132, 134, 135, 136, 131]",
     "extracted_fields": {
       "ACORD_125_applicant_info": {
         "insured_name": {
           "value": [
-            "CORNERSTONE CONTRACTING"
+            "CORNERSTONE CONTRACTING",
+            "CORNERSTONE HOMES",
+            "CORNERSTONE CONTRACTING COMPANY LLC"
           ],
           "confidence": 0.95,
           "source_page_numbers": [
-            128
-          ]
-        },
-        "mailing_address": {
-          "value": [
-            "1005 S 120TH ST STE 201, LAFAYETTE CO 80026-2463"
-          ],
-          "confidence": 0.9,
-          "source_page_numbers": [
-            128
+            128,
+            132,
+            131
           ]
         },
         "business_structure": {
@@ -656,20 +471,53 @@
             128
           ]
         },
-        "business_description": {
+        "mailing_address": {
           "value": [
-            "CUSTOM HOME BUILDER"
+            "1005 S 120TH ST STE 201, LAFAYETTE CO 80026-2463",
+            "9780 S MERIDIAN BLVD STE 400 ENGLEWOOD CO 80112-6072"
           ],
           "confidence": 0.9,
           "source_page_numbers": [
-            128
+            128,
+            131
+          ]
+        },
+        "phone_number": {
+          "value": [
+            "(303)996-7800"
+          ],
+          "confidence": 0.9,
+          "source_page_numbers": [
+            128,
+            131
+          ]
+        },
+        "contact_person": {
+          "value": [
+            "AW 6258",
+            "CORNERSTONE CONTRACTING"
+          ],
+          "confidence": 0.85,
+          "source_page_numbers": [
+            128,
+            131
           ]
         },
         "DBA_name": {
           "value": [
             "CORNERSTONE HOMES"
           ],
-          "confidence": 0.85,
+          "confidence": 0.95,
+          "source_page_numbers": [
+            128,
+            131
+          ]
+        },
+        "business_desc": {
+          "value": [
+            "CUSTOM HOME BUILDER"
+          ],
+          "confidence": 0.9,
           "source_page_numbers": [
             128
           ]
@@ -678,42 +526,29 @@
       "ACORD_125_policy_info": {
         "agency_name": {
           "value": [
-            "COMMERCIAL RISK SOLUTIONS, INC.",
-            "EMC INSURANCE"
+            "COMMERCIAL RISK SOLUTIONS, INC."
           ],
           "confidence": 0.95,
           "source_page_numbers": [
             128,
-            135
+            131
           ]
         },
         "agency_code": {
           "value": [
-            "AW 6258",
-            null
+            "AW 6258"
           ],
-          "confidence": 0.95,
+          "confidence": 0.9,
           "source_page_numbers": [
             128,
-            135
-          ]
-        },
-        "carrier_name": {
-          "value": [
-            "EMPLOYERS MUTUAL CASUALTY COMPANY"
-          ],
-          "confidence": 0.98,
-          "source_page_numbers": [
-            128,
-            132,
-            135,
-            136
+            131
           ]
         },
         "policy_number": {
           "value": [
-            "6 C 5 - 8 4 - 6 4---25",
-            "6C5-84-64---25"
+            "6 C 5 - 8 4 - 6 4 --25",
+            "6C5-84-64---25",
+            "6 C 5 - 8 4 - 6 4 -- 2 5"
           ],
           "confidence": 0.98,
           "source_page_numbers": [
@@ -721,7 +556,8 @@
             132,
             134,
             135,
-            136
+            136,
+            131
           ]
         },
         "effective_date": {
@@ -734,7 +570,8 @@
             132,
             134,
             135,
-            136
+            136,
+            131
           ]
         },
         "expiration_date": {
@@ -747,14 +584,16 @@
             132,
             134,
             135,
-            136
+            136,
+            131
           ]
         },
-        "billing_type": {
+        "policy_status": {
           "value": [
-            "DIRECT BILL"
+            "Renewal",
+            null
           ],
-          "confidence": 0.9,
+          "confidence": 0.6,
           "source_page_numbers": [
             128
           ]
@@ -763,59 +602,52 @@
           "value": [
             "6002.00",
             "900",
-            "INCLUDED"
+            null
           ],
           "confidence": 0.95,
           "source_page_numbers": [
             128,
-            132,
-            136
-          ]
-        },
-        "coinsurance_percentage": {
-          "value": [
-            "80%"
-          ],
-          "confidence": 0.9,
-          "source_page_numbers": [
             132
           ]
         },
-        "subcode": {
+        "carrier_name": {
           "value": [
-            null
+            "EMC INSURANCE",
+            "EMPLOYERS MUTUAL CASUALTY COMPANY"
           ],
-          "confidence": 0,
+          "confidence": 0.95,
           "source_page_numbers": [
-            135
+            134,
+            135,
+            136
           ]
         },
-        "NAIC_code": {},
-        "payment_plan": {},
-        "audit_type": {},
-        "quote_number": {},
-        "policy_status": {}
+        "billing_type": {
+          "value": [
+            "Direct Bill"
+          ],
+          "confidence": 0.9,
+          "source_page_numbers": [
+            131
+          ]
+        }
       },
       "ACORD_140_property_info": {
         "location_address": {
           "value": [
-            "1005 S 120TH ST STE 201, LAFAYETTE CO 80026-2463",
-            "1005 S 120TH ST UNITS 201 AND 101 LAFAYETTE, CO 80026-2462"
-          ],
-          "confidence": 0.97,
-          "source_page_numbers": [
-            128,
-            134
-          ]
-        },
-        "property_description": {
-          "value": [
-            "CUSTOM HOME BUILDER",
-            "SPECIAL*"
+            "001 1005 S 120TH ST, LAFAYETTE, CO 80026-2462"
           ],
           "confidence": 0.9,
           "source_page_numbers": [
-            128,
+            134
+          ]
+        },
+        "other_occupancies": {
+          "value": [
+            "UNITS 201 AND 101"
+          ],
+          "confidence": 0.8,
+          "source_page_numbers": [
             134
           ]
         }
@@ -823,13 +655,11 @@
       "ACORD_140_coverage_info": {
         "deductible": {
           "value": [
-            "May apply for coverage, details specified",
-            "$ 5000 deductible applies to the following covered perils - any one item valued over $250,000 and $1000 deductible applies to all other covered perils per occurrence",
-            1000
+            "5000",
+            "$1,000"
           ],
           "confidence": 0.95,
           "source_page_numbers": [
-            128,
             132,
             135
           ]
@@ -840,103 +670,59 @@
           ],
           "confidence": 0.95,
           "source_page_numbers": [
+            132,
             134,
             135
           ]
         },
-        "building_limit_of_insurance": {
+        "valuation_method": {
           "value": [
-            "$100,000"
+            "ACTUAL CASH VALUE"
           ],
           "confidence": 0.9,
           "source_page_numbers": [
-            134
+            132
           ]
         },
         "business_personal_property_limit": {
           "value": [
             "NOT COVERED"
           ],
-          "confidence": 0.95,
-          "source_page_numbers": [
-            134
-          ]
-        },
-        "reporting_form": {
-          "value": [
-            "NON-REPORTING FORM"
-          ],
-          "confidence": 0.9,
+          "confidence": 0.85,
           "source_page_numbers": [
             134
           ]
         }
       },
       "optional_coverages": {
-        "coverages": [
-          {
-            "name": "EMPLOYEE TOOLS (ACTUAL CASH VALUE)",
-            "amount": "$10,000"
-          },
-          {
-            "name": "NEWLY PURCHASED EQUIPMENT",
-            "percentage_of_cata": "30%"
-          },
-          {
-            "name": "POLLUTANT CLEANUP AND REMOVAL",
-            "amount": "$25,000"
-          },
-          {
-            "name": "RENTAL REIMBURSEMENT LIMIT",
-            "amount": "$10,000"
-          },
-          {
-            "name": "WAITING PERIOD",
-            "duration": "72 HRS"
-          },
-          {
-            "name": "SPARE PARTS AND FUEL",
-            "amount": "$10,000"
-          }
-        ],
         "spoilage_coverage": {
           "value": [
-            "No"
-          ],
-          "confidence": 0.8,
-          "source_page_numbers": [
-            134
-          ]
-        },
-        "ordinance_or_law_coverage": {
-          "value": [
             null,
-            "NOT COVERED"
+            "not found"
           ],
-          "confidence": 0.9,
-          "source_page_numbers": [
-            136
-          ]
+          "confidence": 0,
+          "source_page_numbers": []
         },
         "equipment_breakdown_limit": {
           "value": [
-            null,
-            1000
+            null
           ],
-          "confidence": 0.9,
-          "source_page_numbers": [
-            135
-          ]
+          "confidence": 0,
+          "source_page_numbers": []
+        },
+        "ordinance_or_law_coverage": {
+          "value": [
+            null
+          ],
+          "confidence": 0,
+          "source_page_numbers": []
         },
         "business_income_limit": {
           "value": [
-            null,
-            "not covered"
+            null
           ],
-          "confidence": 0.95,
-          "source_page_numbers": [
-            135
-          ]
+          "confidence": 0,
+          "source_page_numbers": []
         },
         "extra_expense_limit": {
           "value": [
@@ -954,13 +740,10 @@
         },
         "value_reporting": {
           "value": [
-            "No"
+            null
           ],
-          "confidence": 0.9,
-          "source_page_numbers": [
-            134,
-            136
-          ]
+          "confidence": 0,
+          "source_page_numbers": []
         }
       },
       "additional_interests": {
@@ -968,7 +751,7 @@
           "value": [
             "WELLS FARGO VENDOR FINANCIAL SERVICES, LLC"
           ],
-          "confidence": 0.9,
+          "confidence": 0.95,
           "source_page_numbers": [
             136
           ]
@@ -977,31 +760,43 @@
           "value": [
             "ATTENTION: INSURANCE DEPARTMENT PO BOX 35702 BILLINGS, MT 59107-5702"
           ],
-          "confidence": 0.85,
+          "confidence": 0.9,
           "source_page_numbers": [
             136
           ]
         },
         "interest_type": {
           "value": [
-            "LOSS PAYABLE"
+            "LOSS PAYEE - LOSS PAYABLE"
           ],
           "confidence": 0.85,
           "source_page_numbers": [
             136
           ]
         },
-        "certificate_required": {
+        "additional_interest_1": {
           "value": [
-            "null"
+            {
+              "mortgagee_name": "COTF LLC DBA COLORADO TIMBERFRAME"
+            }
           ],
-          "confidence": 0.0,
-          "source_page_numbers": []
+          "confidence": 0.8,
+          "source_page_numbers": [
+            131
+          ]
+        },
+        "additional_interest_2": {
+          "value": [
+            {
+              "mortgagee_name": "ODEN EXCAVATING LLC"
+            }
+          ],
+          "confidence": 0.8,
+          "source_page_numbers": [
+            131
+          ]
         }
-      },
-      "source_page_numbers": [
-        132
-      ]
+      }
     }
   },
   "Commercial Property : page Group [167]": {
@@ -1015,14 +810,14 @@
       "additional_interests": {}
     }
   },
-  "Crime and Fidelity : page Group [93, 96]": {
-    "insurance_type": "Crime and Fidelity : page Group [93, 96]",
+  "Crime and Fidelity : page Group [93, 96, 95]": {
+    "insurance_type": "Crime and Fidelity : page Group [93, 96, 95]",
     "extracted_fields": {
       "Coverages_and_Premium": {
         "value": [
           {
-            "coverage_type": "Fidelity - Employee Theft",
-            "amount": "$387.00"
+            "coverage": "FIDELITY - EMPLOYEE THEFT",
+            "premium": "$387.00"
           }
         ],
         "confidence": 0.95,
@@ -1041,7 +836,7 @@
       },
       "name_of_insured": {
         "value": [
-          "CORNERSTONE CONTRACTING COMPANY LLC DBA CORNERSTONE HOMES"
+          "CORNERSTONE CONTRACTING"
         ],
         "confidence": 0.98,
         "source_page_numbers": [
@@ -1077,29 +872,33 @@
       },
       "general_policy_info": {
         "date_of_application": {
-          "value": null,
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "carrier_name": {
           "value": [
-            "EMC INSURANCE"
+            "08/15/24"
           ],
           "confidence": 0.9,
           "source_page_numbers": [
             93
           ]
         },
+        "carrier_name": {
+          "value": [
+            "EMPLOYERS MUTUAL CASUALTY COMPANY"
+          ],
+          "confidence": 0.98,
+          "source_page_numbers": [
+            93
+          ]
+        },
         "NAIC_code": {
-          "value": null,
-          "confidence": 0.0,
+          "value": [],
+          "confidence": 0,
           "source_page_numbers": []
         },
         "policy_number": {
           "value": [
-            "6 F 8 4 - 6 4 -- 25"
+            "6 F5 - 8 4 - 6 4 - 2 5"
           ],
-          "confidence": 0.95,
+          "confidence": 0.97,
           "source_page_numbers": [
             93
           ]
@@ -1108,7 +907,7 @@
           "value": [
             "08/13/24"
           ],
-          "confidence": 0.95,
+          "confidence": 0.98,
           "source_page_numbers": [
             93
           ]
@@ -1117,16 +916,16 @@
           "value": [
             "08/13/25"
           ],
-          "confidence": 0.95,
+          "confidence": 0.98,
           "source_page_numbers": [
             93
           ]
         },
         "agency_name": {
           "value": [
-            "COMMERCIAL RISK SOLUTIONS, INC."
+            "CORNERSTONE CONTRACTING COMPANY LLC DBA CORNERSTONE HOMES"
           ],
-          "confidence": 0.98,
+          "confidence": 0.85,
           "source_page_numbers": [
             93
           ]
@@ -1142,46 +941,48 @@
         },
         "producer_name": {
           "value": [
-            "COMMERCIAL RISK SOLUTIONS, INC."
-          ],
-          "confidence": 0.98,
-          "source_page_numbers": [
-            93
-          ]
-        },
-        "billing_plan": {
-          "value": [
-            "DIRECT BILL"
+            "AW 6258"
           ],
           "confidence": 0.9,
           "source_page_numbers": [
             93
           ]
         },
+        "billing_plan": {
+          "value": [
+            null
+          ],
+          "confidence": 0,
+          "source_page_numbers": []
+        },
         "payment_method": {
-          "value": null,
-          "confidence": 0.0,
+          "value": [
+            null
+          ],
+          "confidence": 0,
           "source_page_numbers": []
         },
         "quote_number": {
-          "value": null,
-          "confidence": 0.0,
+          "value": [
+            null
+          ],
+          "confidence": 0,
           "source_page_numbers": []
         }
       },
       "applicant_info": {
         "insured_name": {
           "value": [
-            "CORNERSTONE CONTRACTING COMPANY LLC DBA CORNERSTONE HOMES"
+            "CORNERSTONE CONTRACTING"
           ],
-          "confidence": 0.98,
+          "confidence": 0.97,
           "source_page_numbers": [
             93
           ]
         },
         "DBA_name": {
           "value": [
-            "CORNERSTONE HOMES"
+            "CORNERSTONE"
           ],
           "confidence": 0.95,
           "source_page_numbers": [
@@ -1192,29 +993,35 @@
           "value": [
             "1005 S 120TH ST STE 201, LAFAYETTE CO 80026-2463"
           ],
-          "confidence": 0.95,
+          "confidence": 0.96,
           "source_page_numbers": [
             93
           ]
         },
         "phone_number": {
-          "value": null,
-          "confidence": 0.0,
+          "value": [
+            null
+          ],
+          "confidence": 0,
           "source_page_numbers": []
         },
         "email_address": {
-          "value": null,
-          "confidence": 0.0,
+          "value": [
+            null
+          ],
+          "confidence": 0,
           "source_page_numbers": []
         },
         "FEIN": {
-          "value": null,
-          "confidence": 0.0,
+          "value": [
+            null
+          ],
+          "confidence": 0,
           "source_page_numbers": []
         },
         "business_structure": {
           "value": [
-            "LLC"
+            "LLC LLC"
           ],
           "confidence": 0.9,
           "source_page_numbers": [
@@ -1222,18 +1029,24 @@
           ]
         },
         "years_in_business": {
-          "value": null,
-          "confidence": 0.0,
+          "value": [
+            null
+          ],
+          "confidence": 0,
           "source_page_numbers": []
         },
         "website_url": {
-          "value": null,
-          "confidence": 0.0,
+          "value": [
+            null
+          ],
+          "confidence": 0,
           "source_page_numbers": []
         },
         "contact_person": {
-          "value": null,
-          "confidence": 0.0,
+          "value": [
+            null
+          ],
+          "confidence": 0,
           "source_page_numbers": []
         }
       },
@@ -1241,7 +1054,7 @@
         "Coverages_and_Premium": {
           "value": [
             {
-              "coverage_type": "FIDELITY - EMPLOYEE THEFT",
+              "description": "FIDELITY - EMPLOYEE THEFT",
               "deductible": "$1,000",
               "limit": "$100,000"
             }
@@ -1251,7 +1064,34 @@
             96
           ]
         },
+        "name_of_insured": {
+          "value": [
+            "CORNERSTONE HOMES"
+          ],
+          "confidence": 0.98,
+          "source_page_numbers": [
+            96
+          ]
+        },
+        "total_policy_premium_ammount": {
+          "value": [
+            null
+          ],
+          "confidence": 0,
+          "source_page_numbers": [
+            95
+          ]
+        },
         "general_policy_info": {
+          "carrier_name": {
+            "value": [
+              "EMPLOYERS MUTUAL CASUALTY COMPANY"
+            ],
+            "confidence": 0.99,
+            "source_page_numbers": [
+              96
+            ]
+          },
           "policy_number": {
             "value": [
               "6F5-84-64---25"
@@ -1265,7 +1105,7 @@
             "value": [
               "08/13/24"
             ],
-            "confidence": 0.98,
+            "confidence": 0.97,
             "source_page_numbers": [
               96
             ]
@@ -1274,62 +1114,170 @@
             "value": [
               "08/13/25"
             ],
-            "confidence": 0.98,
+            "confidence": 0.97,
             "source_page_numbers": [
               96
             ]
           },
           "date_of_application": {
             "value": [
-              "08/15/24"
+              null
             ],
-            "confidence": 0.9,
-            "source_page_numbers": [
-              96
-            ]
+            "confidence": 0.0,
+            "source_page_numbers": []
           },
-          "carrier_name": {
+          "NAIC_code": {
             "value": [
-              "EMPLOYERS MUTUAL CASUALTY COMPANY"
+              null
             ],
-            "confidence": 0.95,
-            "source_page_numbers": [
-              96
-            ]
+            "confidence": 0.0,
+            "source_page_numbers": []
           },
           "agency_name": {
             "value": [
-              "EMC INSURANCE"
+              null
             ],
-            "confidence": 0.9,
+            "confidence": 0.0,
+            "source_page_numbers": []
+          },
+          "agency_code": {
+            "value": [
+              null
+            ],
+            "confidence": 0.0,
+            "source_page_numbers": []
+          },
+          "producer_name": {
+            "value": [
+              null
+            ],
+            "confidence": 0.0,
+            "source_page_numbers": []
+          },
+          "billing_plan": {
+            "value": [
+              null
+            ],
+            "confidence": 0.0,
+            "source_page_numbers": []
+          },
+          "payment_method": {
+            "value": [
+              null
+            ],
+            "confidence": 0.0,
+            "source_page_numbers": []
+          },
+          "quote_number": {
+            "value": [
+              null
+            ],
+            "confidence": 0.0,
+            "source_page_numbers": []
+          }
+        },
+        "name_of_producer": {
+          "value": [
+            null
+          ],
+          "confidence": 0.0,
+          "source_page_numbers": []
+        },
+        "address_of_servicing_company": {
+          "value": [
+            null
+          ],
+          "confidence": 0.0,
+          "source_page_numbers": []
+        },
+        "number_of_servicing_company": {
+          "value": [
+            null
+          ],
+          "confidence": 0.0,
+          "source_page_numbers": []
+        },
+        "applicant_info": {
+          "insured_name": {
+            "value": [
+              "CORNERSTONE HOMES"
+            ],
+            "confidence": 0.98,
             "source_page_numbers": [
               96
             ]
+          },
+          "DBA_name": {
+            "value": [
+              null
+            ],
+            "confidence": 0.0,
+            "source_page_numbers": []
+          },
+          "mailing_address": {
+            "value": [
+              null
+            ],
+            "confidence": 0.0,
+            "source_page_numbers": []
+          },
+          "phone_number": {
+            "value": [
+              null
+            ],
+            "confidence": 0.0,
+            "source_page_numbers": []
+          },
+          "email_address": {
+            "value": [
+              null
+            ],
+            "confidence": 0.0,
+            "source_page_numbers": []
+          },
+          "FEIN": {
+            "value": [
+              null
+            ],
+            "confidence": 0.0,
+            "source_page_numbers": []
+          },
+          "business_structure": {
+            "value": [
+              null
+            ],
+            "confidence": 0.0,
+            "source_page_numbers": []
+          },
+          "years_in_business": {
+            "value": [
+              null
+            ],
+            "confidence": 0.0,
+            "source_page_numbers": []
+          },
+          "website_url": {
+            "value": [
+              null
+            ],
+            "confidence": 0.0,
+            "source_page_numbers": []
+          },
+          "contact_person": {
+            "value": [
+              null
+            ],
+            "confidence": 0.0,
+            "source_page_numbers": []
           }
-        },
-        "name_of_insured": {
-          "value": [
-            "CORNERSTONE HOMES"
-          ],
-          "confidence": 0.98,
-          "source_page_numbers": [
-            96
-          ]
         }
       }
     }
   },
-  "Professional Liability : page Group [110]": {
-    "insurance_type": "Professional Liability : page Group [110]",
+  "Crime and Fidelity : page Group [110]": {
+    "insurance_type": "Crime and Fidelity : page Group [110]",
     "extracted_fields": {
-      "applicant_info": {},
-      "policy_info": {},
-      "operations_services_info": {},
-      "client_management_info": {},
-      "claim_history": {},
-      "risk_management_practices": {},
-      "requested_coverages": {},
-      "attachments_signatures": {}
+      "schema": {}
     }
   },
   "Commercial Auto : page Group [214, 216, 217, 219, 220, 221, 222, 223, 225]": {
@@ -1338,17 +1286,16 @@
       "general_policy_info": {
         "carrier_name": {
           "value": [
-            "EMPLOYERS MUTUAL CASUALTY COMPANY",
-            "EMC INSURANCE EMPLOYERS MUTUAL CASUALTY COMPANY"
+            "EMC INSURANCE",
+            "EMPLOYERS MUTUAL CASUALTY COMPANY"
           ],
-          "confidence": 0.98,
+          "confidence": 0.99,
           "source_page_numbers": [
             214,
             216,
-            217,
             219,
+            220,
             221,
-            222,
             223,
             225
           ]
@@ -1376,7 +1323,7 @@
           "value": [
             "08/13/24"
           ],
-          "confidence": 0.99,
+          "confidence": 0.98,
           "source_page_numbers": [
             214,
             216,
@@ -1393,7 +1340,7 @@
           "value": [
             "08/13/25"
           ],
-          "confidence": 0.99,
+          "confidence": 0.98,
           "source_page_numbers": [
             214,
             216,
@@ -1406,13 +1353,31 @@
             225
           ]
         },
+        "billing_plan": {
+          "value": [
+            "Annual"
+          ],
+          "confidence": 0.75,
+          "source_page_numbers": [
+            214
+          ]
+        },
+        "date_of_application": {
+          "value": [
+            "08/15/24"
+          ],
+          "confidence": 0.95,
+          "source_page_numbers": [
+            217,
+            219
+          ]
+        },
         "agency_name": {
           "value": [
             "COMMERCIAL RISK SOLUTIONS, INC."
           ],
-          "confidence": 0.95,
+          "confidence": 0.9,
           "source_page_numbers": [
-            214,
             217
           ]
         },
@@ -1420,46 +1385,142 @@
           "value": [
             "AW 6258"
           ],
-          "confidence": 0.9,
+          "confidence": 0.95,
           "source_page_numbers": [
-            214,
             217
           ]
         },
         "producer_name": {
           "value": [
-            "AW 6258",
-            "COMMERCIAL RISK SOLUTIONS, INC."
+            "PRODUCER"
           ],
-          "confidence": 0.95,
+          "confidence": 0.8,
           "source_page_numbers": [
-            214,
             217
-          ]
-        },
-        "date_of_application": {
-          "value": [
-            "08/15/24"
-          ],
-          "confidence": 0.9,
-          "source_page_numbers": [
-            214,
-            217,
-            220,
-            222,
-            225
           ]
         }
       },
+      "coverage_limits_per_vehicle": [
+        {
+          "liability_limit": {
+            "value": [
+              "$2,484.00"
+            ],
+            "confidence": 0.9,
+            "source_page_numbers": [
+              220
+            ]
+          },
+          "uninsured_motorist_bodily_injury": {
+            "value": [
+              "INCLUDED"
+            ],
+            "confidence": 0.95,
+            "source_page_numbers": [
+              220
+            ]
+          },
+          "underinsured_motorist_bodily_injury": {
+            "value": [
+              "INCLUDED"
+            ],
+            "confidence": 0.95,
+            "source_page_numbers": [
+              220
+            ]
+          },
+          "personal_injury_protection_limit": {
+            "value": [
+              "$19.00"
+            ],
+            "confidence": 0.9,
+            "source_page_numbers": [
+              220
+            ]
+          },
+          "comprehensive_deductible": {
+            "value": [
+              "1000"
+            ],
+            "confidence": 0.95,
+            "source_page_numbers": [
+              220
+            ]
+          },
+          "collision_deductible": {
+            "value": [
+              "1000"
+            ],
+            "confidence": 0.95,
+            "source_page_numbers": [
+              220
+            ]
+          }
+        },
+        {
+          "liability_limit": {
+            "value": [
+              "$2,439.00"
+            ],
+            "confidence": 0.9,
+            "source_page_numbers": [
+              220
+            ]
+          },
+          "uninsured_motorist_bodily_injury": {
+            "value": [
+              "INCLUDED"
+            ],
+            "confidence": 0.95,
+            "source_page_numbers": [
+              220
+            ]
+          },
+          "underinsured_motorist_bodily_injury": {
+            "value": [
+              "INCLUDED"
+            ],
+            "confidence": 0.95,
+            "source_page_numbers": [
+              220
+            ]
+          },
+          "personal_injury_protection_limit": {
+            "value": [
+              "$19.00"
+            ],
+            "confidence": 0.9,
+            "source_page_numbers": [
+              220
+            ]
+          },
+          "comprehensive_deductible": {
+            "value": [
+              "1000"
+            ],
+            "confidence": 0.95,
+            "source_page_numbers": [
+              220
+            ]
+          },
+          "collision_deductible": {
+            "value": [
+              "1000"
+            ],
+            "confidence": 0.95,
+            "source_page_numbers": [
+              220
+            ]
+          }
+        }
+      ],
       "applicant_info": {
         "insured_first_name": {
           "value": [
-            "CORNERSTONE",
-            "CORNERSTONE CONTRACTING COMPANY LLC DBA CORNERSTONE HOMES"
+            "CORNERSTONE"
           ],
-          "confidence": 0.9,
+          "confidence": 0.75,
           "source_page_numbers": [
-            214,
             217
           ]
         },
@@ -1469,16 +1530,15 @@
           ],
           "confidence": 0.75,
           "source_page_numbers": [
-            214
+            217
           ]
         },
         "insured_residence_address": {
           "value": [
             "1005 S 120TH ST STE 201"
           ],
-          "confidence": 0.95,
+          "confidence": 0.85,
           "source_page_numbers": [
-            214,
             217
           ]
         },
@@ -1486,9 +1546,8 @@
           "value": [
             "LAFAYETTE"
           ],
-          "confidence": 0.95,
+          "confidence": 0.85,
           "source_page_numbers": [
-            214,
             217
           ]
         },
@@ -1496,9 +1555,8 @@
           "value": [
             "CO"
           ],
-          "confidence": 0.95,
+          "confidence": 0.85,
           "source_page_numbers": [
-            214,
             217
           ]
         },
@@ -1506,545 +1564,134 @@
           "value": [
             "80026-2463"
           ],
-          "confidence": 0.95,
+          "confidence": 0.85,
           "source_page_numbers": [
-            214,
             217
           ]
         }
       },
-      "prior_insurance": {
-        "prior_policy_number": {
-          "value": [
-            "6E5-84-64"
-          ],
-          "confidence": 0.9,
-          "source_page_numbers": [
-            214
-          ]
+      "vehicle_info_per_vehicle": [
+        {
+          "vehicle_1_year": {
+            "value": [
+              "2021"
+            ],
+            "confidence": 0.95,
+            "source_page_numbers": [
+              220
+            ]
+          },
+          "vehicle_1_make": {
+            "value": [
+              "FORD"
+            ],
+            "confidence": 0.95,
+            "source_page_numbers": [
+              220
+            ]
+          },
+          "vehicle_1_model": {
+            "value": [
+              "F-150"
+            ],
+            "confidence": 0.95,
+            "source_page_numbers": [
+              220
+            ]
+          },
+          "vehicle_1_VIN": {
+            "value": [
+              "1FTFW1ED5MFC88496"
+            ],
+            "confidence": 0.95,
+            "source_page_numbers": [
+              220
+            ]
+          },
+          "vehicle_1_use": {
+            "value": [
+              "SERVICE"
+            ],
+            "confidence": 0.9,
+            "source_page_numbers": [
+              220
+            ]
+          },
+          "vehicle_1_cost_new": {
+            "value": [
+              50480
+            ],
+            "confidence": 0.95,
+            "source_page_numbers": [
+              220
+            ]
+          }
+        },
+        {
+          "vehicle_1_year": {
+            "value": [
+              "2022"
+            ],
+            "confidence": 0.95,
+            "source_page_numbers": [
+              220
+            ]
+          },
+          "vehicle_1_make": {
+            "value": [
+              "FORD"
+            ],
+            "confidence": 0.95,
+            "source_page_numbers": [
+              220
+            ]
+          },
+          "vehicle_1_model": {
+            "value": [
+              "F-150"
+            ],
+            "confidence": 0.95,
+            "source_page_numbers": [
+              220
+            ]
+          },
+          "vehicle_1_VIN": {
+            "value": [
+              "1FTFW1E50NKD05674"
+            ],
+            "confidence": 0.95,
+            "source_page_numbers": [
+              220
+            ]
+          },
+          "vehicle_1_use": {
+            "value": [
+              "SERVICE"
+            ],
+            "confidence": 0.9,
+            "source_page_numbers": [
+              220
+            ]
+          },
+          "vehicle_1_cost_new": {
+            "value": [
+              52945
+            ],
+            "confidence": 0.95,
+            "source_page_numbers": [
+              220
+            ]
+          }
         }
-      },
-      "coverage_limits_per_vehicle": {
-        "liability_limit": {
-          "value": [
-            "$1,000,000",
-            "$133.00",
-            "$2,551.00",
-            2484,
-            2439,
-            144.0,
-            1331.0,
-            143.0
-          ],
-          "confidence": 0.95,
-          "source_page_numbers": [
-            214,
-            219,
-            220,
-            221
-          ]
-        },
-        "medical_payments_limit": {
-          "value": [
-            "$5,000 EACH INSURED",
-            2.0,
-            19.0,
-            27.0
-          ],
-          "confidence": 0.95,
-          "source_page_numbers": [
-            214,
-            219,
-            220,
-            221
-          ]
-        },
-        "uninsured_motorist_bodily_injury": {
-          "value": [
-            "SEE ENDORSEMENT CA7093A",
-            null,
-            "INCLUDED",
-            "Included"
-          ],
-          "confidence": 0.9,
-          "source_page_numbers": [
-            214,
-            219,
-            220,
-            221
-          ]
-        },
-        "comprehensive_deductible": {
-          "value": [
-            "SEE ITEM SIX",
-            1000,
-            88.0,
-            455.0,
-            null
-          ],
-          "confidence": 0.95,
-          "source_page_numbers": [
-            214,
-            219,
-            220,
-            221
-          ]
-        },
-        "collision_deductible": {
-          "value": [
-            "SEE SCHEDULE FOR DED",
-            1000,
-            45.0,
-            798.0,
-            null
-          ],
-          "confidence": 0.95,
-          "source_page_numbers": [
-            214,
-            219,
-            220,
-            221
-          ]
-        },
-        "underinsured_motorist_bodily_injury": {
-          "value": [
-            null,
-            "INCLUDED",
-            "Included"
-          ],
-          "confidence": 0.9,
-          "source_page_numbers": [
-            219,
-            220,
-            221
-          ]
-        },
-        "personal_injury_protection_limit": {
-          "value": [],
-          "confidence": 0,
-          "source_page_numbers": []
-        },
-        "uninsured_motorist_property_damage": {
-          "value": [],
-          "confidence": 0,
-          "source_page_numbers": []
-        },
-        "rental_reimbursement_limit": {
-          "value": [],
-          "confidence": 0,
-          "source_page_numbers": []
-        },
-        "towing_limit": {
-          "value": [],
-          "confidence": 0,
-          "source_page_numbers": []
-        },
-        "OEM_parts_coverage": {
-          "value": [],
-          "confidence": 0,
-          "source_page_numbers": []
-        },
-        "rideshare_coverage": {
-          "value": [],
-          "confidence": 0,
-          "source_page_numbers": []
-        },
-        "new_car_protection": {
-          "value": [],
-          "confidence": 0,
-          "source_page_numbers": []
-        },
-        "gap_coverage": {
-          "value": [],
-          "confidence": 0,
-          "source_page_numbers": []
-        },
-        "vehicle_8_liability_limit": {
-          "value": [
-            "4451"
-          ],
-          "confidence": 0.95,
-          "source_page_numbers": [
-            222
-          ]
-        },
-        "vehicle_8_uninsured_motorist_bodily_injury": {
-          "value": [
-            "Included"
-          ],
-          "confidence": 0.9,
-          "source_page_numbers": [
-            222
-          ]
-        },
-        "vehicle_8_underinsured_motorist_bodily_injury": {
-          "value": [
-            "Included"
-          ],
-          "confidence": 0.9,
-          "source_page_numbers": [
-            222
-          ]
-        },
-        "vehicle_8_comprehensive_deductible": {
-          "value": [
-            1000
-          ],
-          "confidence": 0.95,
-          "source_page_numbers": [
-            222
-          ]
-        },
-        "vehicle_8_collision_deductible": {
-          "value": [
-            1000
-          ],
-          "confidence": 0.95,
-          "source_page_numbers": [
-            222
-          ]
-        },
-        "vehicle_8_medical_payments_limit": {
-          "value": [
-            18
-          ],
-          "confidence": 0.95,
-          "source_page_numbers": [
-            222
-          ]
-        },
-        "vehicle_8_rental_reimbursement_limit": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_8_towing_limit": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_8_OEM_parts_coverage": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_8_rideshare_coverage": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_8_new_car_protection": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_8_gap_coverage": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_9_liability_limit": {
-          "value": [
-            "191"
-          ],
-          "confidence": 0.9,
-          "source_page_numbers": [
-            222
-          ]
-        },
-        "vehicle_9_uninsured_motorist_bodily_injury": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_9_underinsured_motorist_bodily_injury": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_9_comprehensive_deductible": {
-          "value": [
-            1000
-          ],
-          "confidence": 0.9,
-          "source_page_numbers": [
-            222
-          ]
-        },
-        "vehicle_9_collision_deductible": {
-          "value": [
-            1000
-          ],
-          "confidence": 0.9,
-          "source_page_numbers": [
-            222
-          ]
-        },
-        "vehicle_9_medical_payments_limit": {
-          "value": [
-            2
-          ],
-          "confidence": 0.9,
-          "source_page_numbers": [
-            222
-          ]
-        },
-        "vehicle_9_rental_reimbursement_limit": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_9_towing_limit": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_9_OEM_parts_coverage": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_9_rideshare_coverage": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_9_new_car_protection": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_9_gap_coverage": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_1_liability_limit": {
-          "value": [
-            2438
-          ],
-          "confidence": 0.8,
-          "source_page_numbers": [
-            225
-          ]
-        },
-        "vehicle_1_medical_payments_limit": {
-          "value": [
-            19
-          ],
-          "confidence": 0.8,
-          "source_page_numbers": [
-            225
-          ]
-        },
-        "vehicle_1_uninsured_motorist_bodily_injury": {
-          "value": [
-            "INCLUDED"
-          ],
-          "confidence": 0.8,
-          "source_page_numbers": [
-            225
-          ]
-        },
-        "vehicle_1_underinsured_motorist_bodily_injury": {
-          "value": [
-            "INCLUDED"
-          ],
-          "confidence": 0.8,
-          "source_page_numbers": [
-            225
-          ]
-        },
-        "vehicle_1_comprehensive_deductible": {
-          "value": [
-            543
-          ],
-          "confidence": 0.85,
-          "source_page_numbers": [
-            225
-          ]
-        },
-        "vehicle_1_collision_deductible": {
-          "value": [
-            742
-          ],
-          "confidence": 0.85,
-          "source_page_numbers": [
-            225
-          ]
-        },
-        "vehicle_2_liability_limit": {
-          "value": [
-            2611
-          ],
-          "confidence": 0.8,
-          "source_page_numbers": [
-            225
-          ]
-        },
-        "vehicle_2_medical_payments_limit": {
-          "value": [
-            19
-          ],
-          "confidence": 0.8,
-          "source_page_numbers": [
-            225
-          ]
-        },
-        "vehicle_2_uninsured_motorist_bodily_injury": {
-          "value": [
-            "INCLUDED"
-          ],
-          "confidence": 0.8,
-          "source_page_numbers": [
-            225
-          ]
-        },
-        "vehicle_2_underinsured_motorist_bodily_injury": {
-          "value": [
-            "INCLUDED"
-          ],
-          "confidence": 0.8,
-          "source_page_numbers": [
-            225
-          ]
-        },
-        "vehicle_2_comprehensive_deductible": {
-          "value": [
-            543
-          ],
-          "confidence": 0.85,
-          "source_page_numbers": [
-            225
-          ]
-        },
-        "vehicle_2_collision_deductible": {
-          "value": [
-            742
-          ],
-          "confidence": 0.85,
-          "source_page_numbers": [
-            225
-          ]
-        }
-      },
-      "vehicle_info_per_vehicle": {
-        "vehicle_1_year": {
-          "value": [
-            "2004",
-            "2023",
-            2023
-          ],
-          "confidence": 0.98,
-          "source_page_numbers": [
-            219,
-            221,
-            225
-          ]
-        },
-        "vehicle_1_make": {
-          "value": [
-            "TRAILER",
-            "HAULMARK",
-            "FORD"
-          ],
-          "confidence": 0.97,
-          "source_page_numbers": [
-            219,
-            221,
-            225
-          ]
-        },
-        "vehicle_1_model": {
-          "value": [
-            "TRAILER",
-            "PASSPORT",
-            "F-150"
-          ],
-          "confidence": 0.97,
-          "source_page_numbers": [
-            219,
-            221,
-            225
-          ]
-        },
-        "vehicle_1_VIN": {
-          "value": [
-            "5NJAA16204J112681",
-            "7KD1E101XPU000461",
-            "1FTFW1E82PFC41532"
-          ],
-          "confidence": 0.98,
-          "source_page_numbers": [
-            219,
-            221,
-            225
-          ]
-        },
-        "vehicle_1_use": {
-          "value": [
-            "NA",
-            "SERVICE"
-          ],
-          "confidence": 0.9,
-          "source_page_numbers": [
-            219,
-            221,
-            225
-          ]
-        },
-        "vehicle_1_cost_new": {
-          "value": [
-            5000,
-            7330,
-            62410
-          ],
-          "confidence": 0.95,
-          "source_page_numbers": [
-            219,
-            221,
-            225
-          ]
-        },
+      ],
+      "vehicle_info_per_vehicle_2": {
         "vehicle_2_year": {
           "value": [
-            "2020",
-            "2023",
-            2023
+            "2022"
           ],
           "confidence": 0.98,
           "source_page_numbers": [
-            219,
-            221,
-            225
+            223
           ]
         },
         "vehicle_2_make": {
@@ -2053,623 +1700,93 @@
           ],
           "confidence": 0.98,
           "source_page_numbers": [
-            219,
-            221,
-            225
+            223
           ]
         },
         "vehicle_2_model": {
           "value": [
-            "SUPER DUTY",
-            "BRONCO",
-            "F-150 LIGHT PU TRUCK"
+            "SUPER DUTY CREW CAB"
           ],
-          "confidence": 0.97,
+          "confidence": 0.95,
           "source_page_numbers": [
-            219,
-            221,
-            225
+            223
           ]
         },
         "vehicle_2_VIN": {
           "value": [
-            "1FT7W2BT8LEE95748",
-            "1FME5BP2PIA85474",
-            "1FTFW1E84PFD17686"
+            "1FT8W3BT6NEF81976"
           ],
           "confidence": 0.98,
           "source_page_numbers": [
-            219,
-            221,
-            225
+            223
           ]
         },
         "vehicle_2_use": {
           "value": [
-            "SERVICE",
-            "NA"
+            "SERVICE"
           ],
-          "confidence": 0.9,
+          "confidence": 0.95,
           "source_page_numbers": [
-            219,
-            221,
-            225
+            223
           ]
         },
         "vehicle_2_cost_new": {
           "value": [
-            56270,
-            42535,
-            96874
+            57770
           ],
           "confidence": 0.95,
           "source_page_numbers": [
-            219,
-            221,
-            225
+            223
           ]
         },
+        "vehicle_2_body_type": {
+          "value": [
+            "MEDIUM TRUCK"
+          ],
+          "confidence": 0.9,
+          "source_page_numbers": [
+            223
+          ]
+        },
+        "vehicle_2_comprehensive_deductible": {
+          "value": [
+            1000
+          ],
+          "confidence": 0.95,
+          "source_page_numbers": [
+            223
+          ]
+        },
+        "vehicle_2_collision_deductible": {
+          "value": [
+            1000
+          ],
+          "confidence": 0.95,
+          "source_page_numbers": [
+            223
+          ]
+        }
+      },
+      "vehicle_info_per_vehicle_3": {
         "vehicle_3_year": {
           "value": [
-            2021,
-            "2021"
+            "2022"
           ],
           "confidence": 0.98,
           "source_page_numbers": [
-            220,
-            221
+            223
           ]
         },
         "vehicle_3_make": {
           "value": [
-            "FORD",
-            "KAUFMAN"
+            "FORD"
           ],
           "confidence": 0.98,
           "source_page_numbers": [
-            220,
-            221
+            223
           ]
         },
         "vehicle_3_model": {
-          "value": [
-            "F-150",
-            "16 DUMP"
-          ],
-          "confidence": 0.98,
-          "source_page_numbers": [
-            220,
-            221
-          ]
-        },
-        "vehicle_3_VIN": {
-          "value": [
-            "1TFW1E5MFC88496",
-            "5SHFX1420MB001087"
-          ],
-          "confidence": 0.98,
-          "source_page_numbers": [
-            220,
-            221
-          ]
-        },
-        "vehicle_3_use": {
-          "value": [
-            "SERVICE",
-            "NA"
-          ],
-          "confidence": 0.9,
-          "source_page_numbers": [
-            220,
-            221
-          ]
-        },
-        "vehicle_3_cost_new": {
-          "value": [
-            50480,
-            7800
-          ],
-          "confidence": 0.95,
-          "source_page_numbers": [
-            220,
-            221
-          ]
-        },
-        "vehicle_3_annual_mileage": {
-          "value": [],
-          "confidence": 0,
-          "source_page_numbers": []
-        },
-        "vehicle_3_special_equipment_YN": {
-          "value": [],
-          "confidence": 0,
-          "source_page_numbers": []
-        },
-        "vehicle_3_equipment_description": {
-          "value": [],
-          "confidence": 0,
-          "source_page_numbers": []
-        },
-        "vehicle_3_anti_theft_device_YN": {
-          "value": [],
-          "confidence": 0,
-          "source_page_numbers": []
-        },
-        "vehicle_3_passive_restraints_YN": {
-          "value": [],
-          "confidence": 0,
-          "source_page_numbers": []
-        },
-        "vehicle_3_ABS_YN": {
-          "value": [],
-          "confidence": 0,
-          "source_page_numbers": []
-        },
-        "vehicle_3_ownership": {
-          "value": [],
-          "confidence": 0,
-          "source_page_numbers": []
-        },
-        "vehicle_3_lease_term": {
-          "value": [],
-          "confidence": 0,
-          "source_page_numbers": []
-        },
-        "vehicle_3_lienholder_name": {
-          "value": [],
-          "confidence": 0,
-          "source_page_numbers": []
-        },
-        "vehicle_3_lienholder_address": {
-          "value": [],
-          "confidence": 0,
-          "source_page_numbers": []
-        },
-        "vehicle_3_garaging_address": {
-          "value": null
-        },
-        "vehicle_4_year": {
-          "value": [
-            2022
-          ],
-          "confidence": 0.98,
-          "source_page_numbers": [
-            220
-          ]
-        },
-        "vehicle_4_make": {
-          "value": [
-            "FORD"
-          ],
-          "confidence": 0.98,
-          "source_page_numbers": [
-            220
-          ]
-        },
-        "vehicle_4_model": {
-          "value": [
-            "F-150"
-          ],
-          "confidence": 0.98,
-          "source_page_numbers": [
-            220
-          ]
-        },
-        "vehicle_4_VIN": {
-          "value": [
-            "1TFW1E50NKD05674"
-          ],
-          "confidence": 0.98,
-          "source_page_numbers": [
-            220
-          ]
-        },
-        "vehicle_4_use": {
-          "value": [
-            "SERVICE"
-          ],
-          "confidence": 0.9,
-          "source_page_numbers": [
-            220
-          ]
-        },
-        "vehicle_4_cost_new": {
-          "value": [
-            52945
-          ],
-          "confidence": 0.95,
-          "source_page_numbers": [
-            220
-          ]
-        },
-        "vehicle_4_annual_mileage": {
-          "value": null
-        },
-        "vehicle_4_special_equipment_YN": {
-          "value": null
-        },
-        "vehicle_4_equipment_description": {
-          "value": null
-        },
-        "vehicle_4_anti_theft_device_YN": {
-          "value": null
-        },
-        "vehicle_4_passive_restraints_YN": {
-          "value": null
-        },
-        "vehicle_4_ABS_YN": {
-          "value": null
-        },
-        "vehicle_4_ownership": {
-          "value": null
-        },
-        "vehicle_4_lease_term": {
-          "value": null
-        },
-        "vehicle_4_lienholder_name": {
-          "value": null
-        },
-        "vehicle_4_lienholder_address": {
-          "value": null
-        },
-        "vehicle_4_garaging_address": {
-          "value": null
-        },
-        "vehicle_1_body_type": {
-          "value": "BOX",
-          "confidence": 0.95,
-          "source_page_numbers": [
-            221
-          ]
-        },
-        "vehicle_1_annual_mileage": {
-          "value": null
-        },
-        "vehicle_1_special_equipment_YN": {
-          "value": null
-        },
-        "vehicle_1_equipment_description": {
-          "value": null
-        },
-        "vehicle_1_anti_theft_device_YN": {
-          "value": null
-        },
-        "vehicle_1_passive_restraints_YN": {
-          "value": null
-        },
-        "vehicle_1_ABS_YN": {
-          "value": null
-        },
-        "vehicle_1_ownership": {
-          "value": null
-        },
-        "vehicle_1_lease_term": {
-          "value": null
-        },
-        "vehicle_1_lienholder_name": {
-          "value": null
-        },
-        "vehicle_1_lienholder_address": {
-          "value": null
-        },
-        "vehicle_2_body_type": {
-          "value": "SPORT UTILITY",
-          "confidence": 0.9,
-          "source_page_numbers": [
-            221
-          ]
-        },
-        "vehicle_2_annual_mileage": {
-          "value": null
-        },
-        "vehicle_2_special_equipment_YN": {
-          "value": null
-        },
-        "vehicle_2_equipment_description": {
-          "value": null
-        },
-        "vehicle_2_anti_theft_device_YN": {
-          "value": null
-        },
-        "vehicle_2_passive_restraints_YN": {
-          "value": null
-        },
-        "vehicle_2_ABS_YN": {
-          "value": null
-        },
-        "vehicle_2_ownership": {
-          "value": null
-        },
-        "vehicle_2_lease_term": {
-          "value": null
-        },
-        "vehicle_2_lienholder_name": {
-          "value": null
-        },
-        "vehicle_2_lienholder_address": {
-          "value": null
-        },
-        "vehicle_3_body_type": {
-          "value": null
-        },
-        "vehicle_8_year": {
-          "value": [
-            2023
-          ],
-          "confidence": 0.99,
-          "source_page_numbers": [
-            222
-          ]
-        },
-        "vehicle_8_make": {
-          "value": [
-            "KENWORTH"
-          ],
-          "confidence": 0.98,
-          "source_page_numbers": [
-            222
-          ]
-        },
-        "vehicle_8_model": {
-          "value": [
-            "T880"
-          ],
-          "confidence": 0.95,
-          "source_page_numbers": [
-            222
-          ]
-        },
-        "vehicle_8_body_type": {
-          "value": [
-            "DUMP TRUCK"
-          ],
-          "confidence": 0.95,
-          "source_page_numbers": [
-            222
-          ]
-        },
-        "vehicle_8_VIN": {
-          "value": [
-            "1NKZX4EX0PJ267030"
-          ],
-          "confidence": 0.98,
-          "source_page_numbers": [
-            222
-          ]
-        },
-        "vehicle_8_use": {
-          "value": [
-            "NA"
-          ],
-          "confidence": 0.8,
-          "source_page_numbers": [
-            222
-          ]
-        },
-        "vehicle_8_annual_mileage": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_8_cost_new": {
-          "value": [
-            294847
-          ],
-          "confidence": 0.95,
-          "source_page_numbers": [
-            222
-          ]
-        },
-        "vehicle_8_special_equipment_YN": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_8_equipment_description": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_8_anti_theft_device_YN": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_8_passive_restraints_YN": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_8_ABS_YN": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_8_ownership": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_8_lease_term": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_8_lienholder_name": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_8_lienholder_address": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_9_year": {
-          "value": [
-            2023
-          ],
-          "confidence": 0.99,
-          "source_page_numbers": [
-            222
-          ]
-        },
-        "vehicle_9_make": {
-          "value": [
-            "DOOLITTLE"
-          ],
-          "confidence": 0.95,
-          "source_page_numbers": [
-            222
-          ]
-        },
-        "vehicle_9_model": {
-          "value": [
-            "25 FLTBED 14KGN TRLR"
-          ],
-          "confidence": 0.9,
-          "source_page_numbers": [
-            222
-          ]
-        },
-        "vehicle_9_body_type": {
-          "value": [
-            "TRAILER"
-          ],
-          "confidence": 0.95,
-          "source_page_numbers": [
-            222
-          ]
-        },
-        "vehicle_9_VIN": {
-          "value": [
-            "1DGDV2525PM06219"
-          ],
-          "confidence": 0.98,
-          "source_page_numbers": [
-            222
-          ]
-        },
-        "vehicle_9_use": {
-          "value": [
-            "NA"
-          ],
-          "confidence": 0.8,
-          "source_page_numbers": [
-            222
-          ]
-        },
-        "vehicle_9_cost_new": {
-          "value": [
-            12995
-          ],
-          "confidence": 0.95,
-          "source_page_numbers": [
-            222
-          ]
-        },
-        "vehicle_9_special_equipment_YN": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_9_equipment_description": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_9_anti_theft_device_YN": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_9_passive_restraints_YN": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_9_ABS_YN": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_9_ownership": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_9_lease_term": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_9_lienholder_name": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_9_lienholder_address": {
-          "value": [
-            null
-          ],
-          "confidence": 0.0,
-          "source_page_numbers": []
-        },
-        "vehicle_12_year": {
-          "value": [
-            "2022"
-          ],
-          "confidence": 0.95,
-          "source_page_numbers": [
-            223
-          ]
-        },
-        "vehicle_12_make": {
-          "value": [
-            "FORD"
-          ],
-          "confidence": 0.95,
-          "source_page_numbers": [
-            223
-          ]
-        },
-        "vehicle_12_model": {
           "value": [
             "F-150 XLT"
           ],
@@ -2678,25 +1795,25 @@
             223
           ]
         },
-        "vehicle_12_VIN": {
+        "vehicle_3_VIN": {
           "value": [
             "1FTFW1E84NFC34417"
+          ],
+          "confidence": 0.98,
+          "source_page_numbers": [
+            223
+          ]
+        },
+        "vehicle_3_use": {
+          "value": [
+            "SERVICE"
           ],
           "confidence": 0.95,
           "source_page_numbers": [
             223
           ]
         },
-        "vehicle_12_use": {
-          "value": [
-            "SERVICE"
-          ],
-          "confidence": 0.9,
-          "source_page_numbers": [
-            223
-          ]
-        },
-        "vehicle_12_cost_new": {
+        "vehicle_3_cost_new": {
           "value": [
             52945
           ],
@@ -2705,85 +1822,90 @@
             223
           ]
         },
-        "vehicle_12_body_type": {
+        "vehicle_3_body_type": {
           "value": [
             "LIGHT TRUCK"
           ],
-          "confidence": 0.85,
+          "confidence": 0.9,
           "source_page_numbers": [
             223
           ]
         },
-        "coverage_limits_per_vehicle": {
-          "liability_limit": {
-            "value": [
-              "2,439.00"
-            ],
-            "confidence": 0.9,
-            "source_page_numbers": [
-              223
-            ]
-          },
-          "medical_payments_limit": {
-            "value": [
-              "19.00"
-            ],
-            "confidence": 0.9,
-            "source_page_numbers": [
-              223
-            ]
-          },
-          "uninsured_motorist_bodily_injury": {
-            "value": [
-              "INCLUDED"
-            ],
-            "confidence": 0.9,
-            "source_page_numbers": [
-              223
-            ]
-          },
-          "underinsured_motorist_bodily_injury": {
-            "value": [
-              "INCLUDED"
-            ],
-            "confidence": 0.9,
-            "source_page_numbers": [
-              223
-            ]
-          }
+        "vehicle_3_comprehensive_deductible": {
+          "value": [
+            1000
+          ],
+          "confidence": 0.75,
+          "source_page_numbers": [
+            223
+          ]
+        },
+        "vehicle_3_collision_deductible": {
+          "value": [
+            1000
+          ],
+          "confidence": 0.75,
+          "source_page_numbers": [
+            223
+          ]
         }
       }
     }
   },
-  "Cyber Liability : page Group [279, 280, 281, 285, 286, 288, 295, 302, 305]": {
-    "insurance_type": "Cyber Liability : page Group [279, 280, 281, 285, 286, 288, 295, 302, 305]",
+  "Cyber Liability : page Group [279, 280, 281, 283, 285, 286, 288, 295, 302, 305, 282]": {
+    "insurance_type": "Cyber Liability : page Group [279, 280, 281, 283, 285, 286, 288, 295, 302, 305, 282]",
     "extracted_fields": {
       "applicant_info": {
         "insured_name": {
           "value": [
-            "CORNERSTONE CONTRACTING LLC DBA CORNERSTONE HOMES"
+            "CORNERSTONE CONTRACTING COMPANY LLC"
           ],
-          "confidence": 0.95,
+          "confidence": 0.98,
           "source_page_numbers": [
-            279
+            279,
+            283
           ]
         },
         "DBA_name": {
           "value": [
             "CORNERSTONE HOMES"
           ],
-          "confidence": 0.9,
+          "confidence": 0.95,
           "source_page_numbers": [
-            279
+            279,
+            283
           ]
         },
         "mailing_address": {
           "value": [
-            "1005 S 120TH ST STE 201, LAFAYETTE CO 80026-2463"
+            "1005 S 120TH ST STE 201, LAFAYETTE CO 80026-2463",
+            "9780 S MERIDIAN BLVD STE 400, ENGLEWOOD CO 80112-6072"
           ],
-          "confidence": 0.95,
+          "confidence": 0.98,
           "source_page_numbers": [
-            279
+            279,
+            283
+          ]
+        },
+        "business_structure": {
+          "value": [
+            "LLC"
+          ],
+          "confidence": 0.98,
+          "source_page_numbers": [
+            279,
+            283
+          ]
+        },
+        "contact_person": {
+          "value": [
+            "COMMERCIAL RISK SOLUTIONS, INC.",
+            "COMMERICAL RISK SOLUTIONS, INC."
+          ],
+          "confidence": 0.9,
+          "source_page_numbers": [
+            279,
+            283
           ]
         },
         "phone_number": {
@@ -2792,35 +1914,43 @@
           ],
           "confidence": 0.9,
           "source_page_numbers": [
-            279
+            283
           ]
         }
       },
       "policy_info": {
         "carrier_name": {
           "value": [
-            "EMC INSURANCE CYBERSOLUTIONS",
+            "EMC INSURANCE EMPLOYERS MUTUAL CASUALTY COMPANY",
             "EMPLOYERS MUTUAL CASUALTY COMPANY",
-            "EMC Insurance Employers Mutual Casualty Company"
+            "EMC INSURANCE / EMPLOYERS MUTUAL CASUALTY COMPANY",
+            "CyberSolutions",
+            "EMC INSURANCE"
           ],
           "confidence": 0.95,
           "source_page_numbers": [
             279,
             280,
-            281
+            281,
+            283,
+            288,
+            282
           ]
         },
         "policy_number": {
           "value": [
             "6 Q 5 - 8 4 - 6 4---25",
             "6Q5-84-64",
-            "6Q5-84-64---25"
+            "6Q5-84-64---25",
+            "6Q58464 2501"
           ],
           "confidence": 0.98,
           "source_page_numbers": [
             279,
             280,
-            281
+            281,
+            283,
+            282
           ]
         },
         "effective_date": {
@@ -2831,7 +1961,9 @@
           "source_page_numbers": [
             279,
             280,
-            281
+            281,
+            283,
+            282
           ]
         },
         "expiration_date": {
@@ -2842,14 +1974,17 @@
           "source_page_numbers": [
             279,
             280,
-            281
+            281,
+            283,
+            282
           ]
         },
         "requested_limit": {
           "value": [
-            "$50,000"
+            "$50,000",
+            "$50,000 ANNUAL AGGREGATE"
           ],
-          "confidence": 0.9,
+          "confidence": 0.95,
           "source_page_numbers": [
             279,
             280
@@ -2859,41 +1994,32 @@
           "value": [
             "$1,000"
           ],
-          "confidence": 0.9,
+          "confidence": 0.95,
           "source_page_numbers": [
             279,
             280
           ]
         }
       },
-      "exposure_info": {
-        "business_structure": {
-          "value": [
-            "LLC"
-          ],
-          "confidence": 0.85,
-          "source_page_numbers": [
-            279
-          ]
-        },
-        "industry_classification": {
-          "value": [
-            "CUSTOM HOME BUILDER"
-          ],
-          "confidence": 0.9,
-          "source_page_numbers": [
-            279
-          ]
-        }
-      },
+      "exposure_info": {},
       "requested_coverages": {
         "network_security_and_privacy": {
           "value": [
             "Y"
           ],
-          "confidence": 0.85,
+          "confidence": 0.9,
           "source_page_numbers": [
             279,
+            280
+          ]
+        },
+        "media_liability": {
+          "value": [
+            "N",
+            "Y"
+          ],
+          "confidence": 0.8,
+          "source_page_numbers": [
             280
           ]
         },
@@ -2904,8 +2030,52 @@
           "confidence": 0.9,
           "source_page_numbers": [
             279,
-            285,
-            305
+            285
+          ]
+        },
+        "business_interruption": {
+          "value": [
+            "N",
+            "Y"
+          ],
+          "confidence": 0.8,
+          "source_page_numbers": [
+            285
+          ]
+        },
+        "system_failure_coverage": {
+          "value": [
+            "N"
+          ],
+          "confidence": 0.5,
+          "source_page_numbers": []
+        },
+        "cyber_extortion": {
+          "value": [
+            "Y"
+          ],
+          "confidence": 0.9,
+          "source_page_numbers": [
+            279,
+            280,
+            285
+          ]
+        },
+        "social_engineering_fraud": {
+          "value": [
+            "N"
+          ],
+          "confidence": 0.5,
+          "source_page_numbers": []
+        },
+        "reputational_harm": {
+          "value": [
+            "Y"
+          ],
+          "confidence": 0.9,
+          "source_page_numbers": [
+            279,
+            285
           ]
         },
         "PCI_fines_and_penalties": {
@@ -2915,51 +2085,15 @@
           "confidence": 0.9,
           "source_page_numbers": [
             279,
-            285,
-            305
+            285
           ]
         },
-        "media_liability": {
+        "dependent_business_interruption": {
           "value": [
-            "Y"
+            "N"
           ],
-          "confidence": 0.85,
-          "source_page_numbers": [
-            280,
-            305
-          ]
-        },
-        "cyber_extortion": {
-          "value": [
-            "Y"
-          ],
-          "confidence": 0.9,
-          "source_page_numbers": [
-            280,
-            285,
-            295,
-            305
-          ]
-        },
-        "business_interruption": {
-          "value": [
-            "Y"
-          ],
-          "confidence": 0.9,
-          "source_page_numbers": [
-            285,
-            305
-          ]
-        },
-        "reputational_harm": {
-          "value": [
-            "Y"
-          ],
-          "confidence": 0.9,
-          "source_page_numbers": [
-            285,
-            305
-          ]
+          "confidence": 0.5,
+          "source_page_numbers": []
         }
       },
       "attachments_signatures": {}

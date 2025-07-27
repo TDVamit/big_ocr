@@ -3,3 +3,4 @@ asyncio
 nest-asyncio
 streamlit-pdf-viewer>=0.0.5
 PyMuPDF>=1.23.0 
+pdf2image
