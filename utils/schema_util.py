@@ -1,9 +1,7 @@
 import json
 import re
-import os
-base_dir = os.path.dirname(os.path.realpath(__file__))
-schema_path = os.path.join(base_dir, 'json', 'schema.json')
-schema_json = json.load(open(schema_path))
+
+schema_json = json.load(open('schema.json'))
 
 
 def get_insurance_types_from_schema():
