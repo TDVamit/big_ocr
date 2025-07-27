@@ -10,7 +10,8 @@ import json
 from dotenv import load_dotenv
 load_dotenv()
 
-OCR_CACHE_FILE = "./json/ocr_results.json"  
+base_dir = os.path.dirname(os.path.realpath(__file__))
+OCR_CACHE_FILE = os.path.join(base_dir, 'json', 'ocr_results.json')
 
 price_per_million_tokens = {
     "gpt-4.1-nano":{

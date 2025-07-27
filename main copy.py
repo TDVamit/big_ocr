@@ -7,7 +7,9 @@ import time
 from utils.openai import tokens_used
 import json
 
-OCR_CACHE_FILE = "./json/ocr_results.json"  
+
+base_dir = os.path.dirname(os.path.realpath(__file__))
+OCR_CACHE_FILE = os.path.join(base_dir, 'json', 'ocr_results.json')
 
 price_per_million_tokens = {
     "gpt-4.1-nano":{
