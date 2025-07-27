@@ -1,0 +1,5 @@
+streamlit>=1.28.0
+asyncio
+nest-asyncio
+streamlit-pdf-viewer>=0.0.5
+PyMuPDF>=1.23.0 
