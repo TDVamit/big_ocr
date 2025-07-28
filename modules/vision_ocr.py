@@ -21,14 +21,11 @@ async def vision_ocr(input_pdf_path,dpi=200):
         }}
         """ 
 
-        ocr_result = []
-
-        tasks = [
-            openai_vision_completion(prompt, image)
-            for image in base64_images
-        ]
-        ocr_results = await asyncio.gather(*tasks)
-
+        import time
+        ocr_results = await asyncio.gather(
+            *[openai_vision_completion(prompt, image) for image in base64_images]
+        )
+        ocr_result =[]
         for i, ocr_text in enumerate(ocr_results):
             ocr_data={
                 "page_num" : i+1,
