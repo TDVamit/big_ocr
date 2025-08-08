@@ -5,6 +5,7 @@ from utils.openai import open_ai_chat_completion
 from utils.page_helper import add_padding_pages, redistribute_common_pages
 from modules.get_fields_ai import extract_fields_by_insurance_type
 import os
+import traceback
 
 ANALYSIS_MODEL = "gpt-4.1-mini"   
 ANALYSIS_BATCH_SIZE = 20
@@ -18,54 +19,63 @@ MAX_CONCURRENT_REQUESTS = 10
 def create_analysis_prompt_for_pages(pages_data, schema):
     """Create prompt for analyzing relevant pages with their full content"""
 
+    try:
 
-    pages_text = ""
-    page_numbers = []
 
-    for page_data in pages_data:
-        page_num = page_data['page_num']
-        text = page_data.get('original_text', '')
-        page_numbers.append(page_num)
-        pages_text += f"\nPage {page_num}:\n{text}\n"
+        pages_text = ""
+        page_numbers = []
 
-    
-    page_range = f"{min(page_numbers)}-{max(page_numbers)}" if len(page_numbers) > 1 else str(page_numbers[0])
-    
-    # Create a more concise schema description
-    schema_summary = f"{schema}"
-    # Create the full prompt
-    prompt = f"""
-        Analyze these insurance document pages to identify specific insurance types.
+        for page_data in pages_data:
+            page_num = page_data['page_num']
+            text = page_data.get('original_text', '')
+            page_numbers.append(page_num)
+            pages_text += f"\nPage {page_num}:\n{text}\n"
 
-        INSTRUCTIONS:
-        1. Identify the specific insurance type for each page
-        2. Provide confidence (0.0-1.0) and brief notes
-        3. Return info for ALL pages provided
-        4. if you are not sure about the insurance type, return "Common" strictly
-        5. strictly return the insurance type
+        
+        page_range = f"{min(page_numbers)}-{max(page_numbers)}" if len(page_numbers) > 1 else str(page_numbers[0])
+        
+        # Create a more concise schema description
+        
+        # if min(page_numbers) > 3  and 'common_declaration' in schema:
+        #         schema.pop('common_declaration')
+        schema_summary = f"{schema}"
+        
+        # Create the full prompt
+        prompt = f"""
+            Analyze these insurance document pages to identify specific insurance types.
 
-        keep in mind common declaration type pages are only in start of document i.e. it can be only seen in page 1,2,3
+            INSTRUCTIONS:
+            1. Identify the specific insurance type for each page
+            2. Provide confidence (0.0-1.0) and brief notes
+            3. Return info for ALL pages provided
+            4. if you are not sure about the insurance type, return "Common" strictly
+            5. strictly return the insurance type
 
-        Available types: {schema_summary}
+            keep in mind common declaration type pages are only in start of document i.e. it can be only seen in page 1,2,3
 
-        Pages content (pages {page_range}):
-        {pages_text}
+            Available types: {schema_summary}
 
-        JSON format:
-        {{
-            "pages": {{
-                "page_15": {{
-                    "insurance_type": "Personal Auto" ( you can choose from {schema_summary}),
-                    "confidence": 0.95,
-                    "notes": "Auto application with vehicle details"
+            Pages content (pages {page_range}):
+            {pages_text}
+
+            JSON format:
+            {{
+                "pages": {{
+                    "page_15": {{
+                        "insurance_type": "Personal Auto" ( you can choose from {schema_summary}),
+                        "confidence": 0.95,
+                        "notes": "Auto application with vehicle details"
+                    }}
                 }}
             }}
-        }}
 
-        strictly insurance types from the available types, no other text
-        Return ONLY valid JSON, no other text."""
+            strictly insurance types from the available types, no other text
+            Return ONLY valid JSON, no other text."""
 
-    return prompt
+        return prompt
+    except Exception as e:
+        print("Exception during creating prompt of schema type error:", str(e))
+        traceback.print_exc()
 
 async def analyze_relevant_pages_async(relevant_pages, ocr_results, add_padding=True):
     """Analyze only the relevant pages to determine insurance types and extract fields"""
@@ -208,6 +218,8 @@ async def process_insurance_analysis_batch(batch_pages, batch_num, schema):
                 
         except Exception as e:
             print(f"    ⚠️  Error in categorization batch {batch_num}, attempt {attempt + 1}: {e}")
+            traceback.print_exc()
+
             if attempt < MAX_RETRIES - 1:
                 await asyncio.sleep(RETRY_DELAY * (attempt + 1))
             else:

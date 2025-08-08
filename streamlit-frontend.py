@@ -263,8 +263,12 @@ def get_confidence_color(confidence):
     else:
         return "confidence-low"
 
-def display_field_value(field_name, field_data, pdf_file):
+# Global counter for unique button keys
+_button_counter = 0
+
+def display_field_value(field_name, field_data, pdf_file, context_path=""):
     """Display a field with its value, confidence, and source buttons"""
+    global _button_counter
     
     value = field_data.get('value', field_data.get('source', 'N/A'))
     confidence = field_data.get('confidence', 0.0)
@@ -317,9 +321,13 @@ def display_field_value(field_name, field_data, pdf_file):
             cols = st.columns(len(row_pages))
             for i, page in enumerate(row_pages):
                 with cols[i]:
-                    # Use a unique key that includes the page number
+                    # Use a unique key that includes the page number and more unique identifiers
                     
-                    button_key = f"nav_to_page_{page}_{field_name}_{hash(str(field_data))}_row_{row_start}"
+                    # Create a more unique key by including the context path, field name, page, row position, column index, and global counter
+                    context_safe = context_path.replace(" ", "_").replace("    ", "_").replace("  ", "_")
+                    _button_counter += 1
+                    unique_id = f"{context_safe}_{field_name}_{page}_{row_start}_{i}_{_button_counter}"
+                    button_key = f"nav_to_page_{page}_{unique_id}"
                     if st.button(f"📄 {page}", key=button_key, help=f"Navigate to page {page}"):
                         st.session_state.selected_page = int(page)
                         st.success(f"✅ Navigated to page {page}")
@@ -335,13 +343,13 @@ def display_insurance_section(section_name, section_data, pdf_file):
             if isinstance(field_data, dict):
                 if 'value' in field_data or 'source' in field_data:
                     # This is a field with value/confidence/source
-                    display_field_value(field_name, field_data, pdf_file)
+                    display_field_value(field_name, field_data, pdf_file, f"{section_name}_{field_name}")
                 else:
                     # This is a nested section
                     st.markdown(f"**{field_name.replace('_', ' ').title()}:**")
                     for sub_field, sub_data in field_data.items():
                         if isinstance(sub_data, dict):
-                            display_field_value(f"  {sub_field}", sub_data, pdf_file)
+                            display_field_value(f"  {sub_field}", sub_data, pdf_file, f"{section_name}_{field_name}_{sub_field}")
                         else:
                             st.markdown(f"  **{sub_field}:** {sub_data}")
             elif isinstance(field_data, list):
@@ -352,7 +360,7 @@ def display_insurance_section(section_name, section_data, pdf_file):
                     if isinstance(item, dict):
                         for sub_field, sub_data in item.items():
                             if isinstance(sub_data, dict) and ('value' in sub_data or 'source' in sub_data):
-                                display_field_value(f"    {sub_field}", sub_data, pdf_file)
+                                display_field_value(f"    {sub_field}", sub_data, pdf_file, f"{section_name}_{field_name}_item_{i}_{sub_field}")
                             else:
                                 st.markdown(f"    **{sub_field}:** {sub_data}")
             else:

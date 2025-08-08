@@ -23,6 +23,11 @@ price_per_million_tokens = {
         "prompt":0.40,
         "completion":1.60,
         "cached":0.10
+    },
+    "gemini-2.5-flash-lite-preview-06-17":{
+        "prompt":0.100,
+        "completion":0.400,
+        "cached":0.025
     }
 }
 
@@ -52,8 +57,13 @@ async def main_async(PDF_FILE = "input.pdf", use_cache=True, pdf_images_path=Non
         print(f"❌ Error: PDF file '{PDF_FILE}' not found!")
         return 0
     
-    ocr_results = await vision_ocr(PDF_FILE,200)
-    save_ocr_results(ocr_results)
+    if not use_cache:
+        ocr_results = await vision_ocr(PDF_FILE,200)
+        save_ocr_results(ocr_results)
+    else:
+        with open(OCR_CACHE_FILE, 'r', encoding='utf-8') as f:
+            ocr_results = json.load(f)
+    
     print("ocr result complete")
     if not ocr_results:
         print(f"❌ No OCR results obtained")
@@ -77,17 +87,17 @@ async def main_async(PDF_FILE = "input.pdf", use_cache=True, pdf_images_path=Non
     print(f"  • Images path: {images_status}")
     print(f"  • Page padding: {padding_status}")
     print(f"  • Execution time: {execution_time:.2f} seconds")
-    prompt_charge = (tokens_used["gpt-4.1-nano"]["prompt_tokens"] * price_per_million_tokens["gpt-4.1-nano"]["prompt"] / 1000000) + (tokens_used["gpt-4.1-mini"]["prompt_tokens"] * price_per_million_tokens["gpt-4.1-mini"]["prompt"] / 1000000)
-    completion_charge = (tokens_used["gpt-4.1-nano"]["completion_tokens"] * price_per_million_tokens["gpt-4.1-nano"]["completion"] / 1000000) + (tokens_used["gpt-4.1-mini"]["completion_tokens"] * price_per_million_tokens["gpt-4.1-mini"]["completion"] / 1000000)
-    cached_charge = (tokens_used["gpt-4.1-nano"]["cached_tokens"] * price_per_million_tokens["gpt-4.1-nano"]["cached"] / 1000000) + (tokens_used["gpt-4.1-mini"]["cached_tokens"] * price_per_million_tokens["gpt-4.1-mini"]["cached"] / 1000000)
-    # ocr_charge = len(ocr_results) * 0.0015
+    prompt_charge = (tokens_used["gpt-4.1-nano"]["prompt_tokens"] * price_per_million_tokens["gpt-4.1-nano"]["prompt"] / 1000000) + (tokens_used["gpt-4.1-mini"]["prompt_tokens"] * price_per_million_tokens["gpt-4.1-mini"]["prompt"] / 1000000) + (tokens_used["gemini-2.5-flash-lite-preview-06-17"]["prompt_tokens"] * price_per_million_tokens["gemini-2.5-flash-lite-preview-06-17"]["prompt"] / 1000000)
+    completion_charge = (tokens_used["gpt-4.1-nano"]["completion_tokens"] * price_per_million_tokens["gpt-4.1-nano"]["completion"] / 1000000) + (tokens_used["gpt-4.1-mini"]["completion_tokens"] * price_per_million_tokens["gpt-4.1-mini"]["completion"] / 1000000) + (tokens_used["gemini-2.5-flash-lite-preview-06-17"]["completion_tokens"] * price_per_million_tokens["gemini-2.5-flash-lite-preview-06-17"]["completion"] / 1000000)
+    cached_charge = (tokens_used["gpt-4.1-nano"]["cached_tokens"] * price_per_million_tokens["gpt-4.1-nano"]["cached"] / 1000000) + (tokens_used["gpt-4.1-mini"]["cached_tokens"] * price_per_million_tokens["gpt-4.1-mini"]["cached"] / 1000000) + (tokens_used["gemini-2.5-flash-lite-preview-06-17"]["cached_tokens"] * price_per_million_tokens["gemini-2.5-flash-lite-preview-06-17"]["cached"] / 1000000)
+    
     total_charge = prompt_charge + completion_charge + cached_charge 
     print(f"  • Prompt charge: ${prompt_charge:.6f}")
     print(f"  • Completion charge: ${completion_charge:.6f}")
     print(f"  • Cached charge: ${cached_charge:.6f}")
-    # print(f"  • OCR charge: ${ocr_charge:.6f}")
+    
     print(f"  • Total charge: ${total_charge:.6f}")
-    # Count categorized pages
+    
     total_categorized = 0
     if isinstance(final_results, dict):
         for insurance_type, data in final_results.items():

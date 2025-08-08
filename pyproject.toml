@@ -27,4 +27,8 @@ dependencies = [
     "numpy<2.0",
     "opencv-python>=4.6.0.66",
     "standard-imghdr>=3.13.0",
+    "aiolimiter>=1.2.1",
+    "google-genai>=1.28.0",
+    "asynciolimiter>=1.2.0",
+    "mistralai>=1.9.3",
 ]

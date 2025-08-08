@@ -30,12 +30,18 @@ per_token_cost = {
     }
 }
 
+async def send_to_open_ai(prompt, base64_image, model):
+    start_time = time.time()
+    response = await openai_vision_completion(prompt, base64_image, model=model)
+    end_time = time.time()
+    print("time taken per vision -",end_time - start_time)
+    return response
+
+
 
 async def main():
-    image_path = r"pdf_images\page_1.jpg"
     model = "gpt-4.1-nano"
     start_time = time.time()
-    base64_image = base64.b64encode(open(image_path, "rb").read()).decode("utf-8")
     prompt = f"""
         Extract the text from the image with table in a structured json format so we can use it for analysis
         strictly do not miss any information if any info doent fit any field just retun in extra field
@@ -47,20 +53,31 @@ async def main():
         tables : here is object of structured all tables present in image
         }}
         """ 
-    response = await openai_vision_completion(prompt, base64_image, model=model)
-    end_time = time.time()
-    total_prompt_tokens = tokens_used[model]["prompt_tokens"]
-    total_completion_tokens = tokens_used[model]["completion_tokens"]
-    total_cached_tokens = tokens_used[model]["cached_tokens"]
 
-    print("time taken", end_time - start_time)
-    print(response)
-    print("total cost ")
-    print("total prompt tokens", total_prompt_tokens , "cost", total_prompt_tokens * per_token_cost[model]["prompt"])
-    print("total completion tokens", total_completion_tokens, "cost", total_completion_tokens * per_token_cost[model]["completion"])
-    print("total cached tokens", total_cached_tokens, "cost", total_cached_tokens * per_token_cost[model]["cached"])
-    print("total cost", (total_prompt_tokens * per_token_cost[model]["prompt"]) + (total_completion_tokens * per_token_cost[model]["completion"]) + (total_cached_tokens * per_token_cost[model]["cached"]))
-    print("total cost for 310 pages", ((total_prompt_tokens * per_token_cost[model]["prompt"]) + (total_completion_tokens * per_token_cost[model]["completion"]) + (total_cached_tokens * per_token_cost[model]["cached"])) * 310)
+
+    no_of_images = 3 # Set this to the number of images you want to process
+
+    async def process_image(idx):
+        image_path = f"pdf_images/page_{idx:04d}.png"
+        with open(image_path, "rb") as img_file:
+            base64_image = base64.b64encode(img_file.read()).decode("utf-8")
+        response = await send_to_open_ai(prompt, base64_image, model=model)
+        return {"page": idx, "response": response}
+
+    tasks = [process_image(i) for i in range(no_of_images)]
+    responses = await asyncio.gather(*tasks)
+    end_time = time.time()
+    # total_prompt_tokens = tokens_used[model]["prompt_tokens"]
+    # total_completion_tokens = tokens_used[model]["completion_tokens"]
+    # total_cached_tokens = tokens_used[model]["cached_tokens"]
+
+    # print("time taken", end_time - start_time)
+    # print("total cost ")
+    # print("total prompt tokens", total_prompt_tokens , "cost", total_prompt_tokens * per_token_cost[model]["prompt"])
+    # print("total completion tokens", total_completion_tokens, "cost", total_completion_tokens * per_token_cost[model]["completion"])
+    # print("total cached tokens", total_cached_tokens, "cost", total_cached_tokens * per_token_cost[model]["cached"])
+    # print("total cost", (total_prompt_tokens * per_token_cost[model]["prompt"]) + (total_completion_tokens * per_token_cost[model]["completion"]) + (total_cached_tokens * per_token_cost[model]["cached"]))
+    # print("total cost for 310 pages", ((total_prompt_tokens * per_token_cost[model]["prompt"]) + (total_completion_tokens * per_token_cost[model]["completion"]) + (total_cached_tokens * per_token_cost[model]["cached"])) * 310)
 
 if __name__ == "__main__":
     asyncio.run(main())

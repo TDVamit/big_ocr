@@ -43,9 +43,22 @@ def collect_data(src: dict, dst: dict):
                 if not isinstance(dst_pages, list):
                     dst_pages = [dst_pages] if dst_pages is not None else []
                 
-                dst_val['value'] = list(dict.fromkeys(dst_value + src_value))
+                # Safe deduplication that handles unhashable types
+                combined_values = dst_value + src_value
+                unique_values = []
+                for item in combined_values:
+                    if item not in unique_values:
+                        unique_values.append(item)
+                
+                combined_pages = dst_pages + src_pages
+                unique_pages = []
+                for page in combined_pages:
+                    if page not in unique_pages:
+                        unique_pages.append(page)
+                
+                dst_val['value'] = unique_values
                 dst_val['confidence'] = max(dst_val.get('confidence', 0) or 0, val.get('confidence', 0) or 0)
-                dst_val['source_page_numbers'] = list(dict.fromkeys(dst_pages + src_pages))
+                dst_val['source_page_numbers'] = unique_pages
             else:
                 dst[key] = val
         # Container – keep recursing
@@ -185,7 +198,9 @@ async def extract_fields_for_insurance_type(insurance_type, pages_info, ocr_look
                         print(f"    ⚠️  Batch failed: {batch_result}")   
             except Exception as e:
                 print(f" error in extract_fields_for_insurance_type {e}")
-            all_extracted_data.append({"insurance_type": f"{insurance_type} : page Group {page_group["page_nums"]}", "extracted_fields": all_extracted_data_per_type})
+            # Fix the f-string issue by converting page_nums to string properly
+            page_nums_str = str(page_group["page_nums"])
+            all_extracted_data.append({"insurance_type": f"{insurance_type} : page Group {page_nums_str}", "extracted_fields": all_extracted_data_per_type})
         return all_extracted_data
     except Exception as e:
         return {"error": f"Field extraction failed: {e}"}
