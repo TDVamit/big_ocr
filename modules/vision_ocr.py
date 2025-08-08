@@ -32,7 +32,6 @@ async def run_all(images):
 
 
 async def vision_ocr(input_pdf_path,dpi=200):
-
     try:
     
         image_bytes = pdf_to_image(input_pdf_path,'image_bytes')
@@ -49,3 +48,5 @@ async def vision_ocr(input_pdf_path,dpi=200):
         return ocr_result
     except Exception as e:
         raise ValueError(f" something wrong with getting ocr data error :- {str(e)}")
+    
+

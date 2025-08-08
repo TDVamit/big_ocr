@@ -18,8 +18,6 @@ nest_asyncio.apply()
 
 # Import the main functions
 from main import main_async as main_ocr_async
-from main_vision import main_async as main_vision_async
-from main_image import main_async as main_image_async
 
 # Configure Streamlit page
 st.set_page_config(
