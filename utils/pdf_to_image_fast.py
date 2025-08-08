@@ -1,7 +1,7 @@
 import os
 import time
 import psutil
-import fitz  # PyMuPDF
+import fitz  
 import multiprocessing as mp
 from typing import Literal
 import base64
@@ -88,7 +88,3 @@ def pdf_to_image(pdf_path, return_type: Literal['local_path', 'base64','image_by
     print(f"[PyMuPDF] wall={wall:.2f}s  CPU-sec={cpu:.2f}s  ΔRAM={ram:.1f} MB")
 
     return return_list
-
-
-if __name__ == "__main__":
-    pdf_to_image("input.pdf",'local_path')
