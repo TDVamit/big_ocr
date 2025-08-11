@@ -3,21 +3,16 @@ import asyncio
 import json
 import os
 import time
-from datetime import datetime
-import subprocess
-import sys
 from pathlib import Path
 import tempfile
-import base64
-import threading
 import nest_asyncio
 import fitz  # PyMuPDF for PDF to image conversion
+from main import main_async as main_ocr_async
 
 # Enable nested async loops for Streamlit
 nest_asyncio.apply()
 
 # Import the main functions
-from main import main_async as main_ocr_async
 
 # Configure Streamlit page
 st.set_page_config(
@@ -372,10 +367,10 @@ def run_processing_script_sync(script_choice, pdf_path, use_cache, pdf_images_pa
         
         if script_choice == "OCR-based (main.py)":
             result = loop.run_until_complete(main_ocr_async(pdf_path, use_cache, pdf_images_path, add_padding))
-        elif script_choice == "Vision-based (main-vision.py)":
-            result = loop.run_until_complete(main_vision_async(pdf_path, use_cache, pdf_images_path, add_padding))
-        elif script_choice == "Image-based (main-image.py)":
-            result = loop.run_until_complete(main_image_async(pdf_path, use_cache, pdf_images_path, add_padding))
+        # elif script_choice == "Vision-based (main-vision.py)":
+        #     result = loop.run_until_complete(main_vision_async(pdf_path, use_cache, pdf_images_path, add_padding))
+        # elif script_choice == "Image-based (main-image.py)":
+        #     result = loop.run_until_complete(main_image_async(pdf_path, use_cache, pdf_images_path, add_padding))
         
         loop.close()
         return True, result
