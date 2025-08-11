@@ -1,0 +1,928 @@
+{
+    "common_declaration": {
+      "description": "This dictionary details every insurance's premium and its coverage, typicaly this includes severa insurance details on single page and there total coverage this typically shown only on starting of the document i.e page number 1,2,3 ",
+      "schema": {
+        "Coverages_and_Premium": "Coverages and Premium of each insurace in this document",
+        "total_policy_premium_ammount": "Ammount of total policy premium combined",
+        "name_of_insured": "Name of the insured",
+        "name_of_producer": "Name of the Producer",
+        "address_of_servicing_company": "Address of servicing company",
+        "number_of_servicing_company": "Number of servicing company"
+      }
+    },
+    "Commercial Auto": {
+      "description": "This dictionary encapsulates every piece of information collected on a standard auto insurance application, including policy details, applicant/co-applicant data, vehicle and driver information, coverage selections, insurance history, loss records, supplemental questions, and signatures/attachments.",
+      "schema": {
+        "general_policy_info": {
+          "date_of_application": "Date the application was completed",
+          "carrier_name": "Insurance carrier",
+          "NAIC_code": "NAIC number of carrier",
+          "policy_number": "Policy number (if renewing)",
+          "effective_date": "Start date of coverage",
+          "expiration_date": "End date of coverage",
+          "agency_name": "Name of agency submitting the application",
+          "agency_code": "Assigned agency code",
+          "producer_name": "Name of the insurance producer",
+          "billing_plan": "Annual, quarterly, monthly, etc.",
+          "payment_method": "EFT, Credit Card, Check, etc.",
+          "quote_number": "Quote reference number"
+        },
+        "named_insureds": [
+          {
+            "role": "Primary or Co-Insured",
+            "first_name": "First name of the insured",
+            "last_name": "Last name of the insured",
+            "date_of_birth": "Date of birth",
+            "phone_number": "Phone number",
+            "email_address": "Email address"
+          }
+        ],
+        "addresses": {
+          "residence_address": {
+            "street": "Primary residence address",
+            "city": "City",
+            "state": "State",
+            "zip_code": "ZIP code"
+          },
+          "mailing_address": {
+            "street": "Mailing address (if different)",
+            "city": "Mailing city",
+            "state": "Mailing state",
+            "zip_code": "Mailing ZIP code"
+          }
+        },
+        "vehicles": [
+          {
+            "year": "Model year",
+            "make": "Manufacturer",
+            "model": "Model name",
+            "body_type": "Body type",
+            "VIN": "Vehicle Identification Number",
+            "use": "Use of vehicle (pleasure, commute, business)",
+            "garaging_address": "Where vehicle is parked overnight",
+            "annual_mileage": "Estimated annual mileage",
+            "cost_new": "Original cost when new",
+            "special_equipment_YN": "Is there custom/special equipment? (Y/N)",
+            "equipment_description": "Description of special equipment",
+            "anti_theft_device_YN": "Equipped with anti-theft device? (Y/N)",
+            "passive_restraints_YN": "Equipped with airbags/passive restraints? (Y/N)",
+            "ABS_YN": "Anti-lock braking system? (Y/N)",
+            "ownership": "Owned, Financed, or Leased",
+            "lease_term": "Lease term if leased",
+            "lienholder_name": "Lienholder’s name",
+            "lienholder_address": "Lienholder’s address"
+          }
+        ],
+        "drivers": [
+          {
+            "first_name": "Driver’s first name",
+            "last_name": "Driver’s last name",
+            "date_of_birth": "DOB",
+            "gender": "Gender",
+            "marital_status": "Marital status",
+            "license_number": "License number",
+            "license_state": "License state",
+            "date_licensed": "Date first licensed",
+            "relationship_to_applicant": "Relationship to applicant",
+            "occupation": "Occupation",
+            "employer": "Employer",
+            "driver_training_YN": "Completed driver training? (Y/N)",
+            "good_student_YN": "Good student discount applicable? (Y/N)",
+            "school_distance_gt_100mi_YN": "Student attends school >100 miles from home? (Y/N)"
+          }
+        ],
+        "coverages": [
+          {
+            "applies_to_vehicle_VIN": "VIN of the vehicle this coverage applies to (or 'ALL')",
+            "liability_limit": "BI/PD limit (split or CSL)",
+            "uninsured_motorist_bodily_injury": "UM limits",
+            "underinsured_motorist_bodily_injury": "UIM limits",
+            "uninsured_motorist_property_damage": "UMPD limit (if available)",
+            "personal_injury_protection_limit": "PIP coverage amount",
+            "comprehensive_deductible": "Deductible for comprehensive damage",
+            "collision_deductible": "Deductible for collision",
+            "medical_payments_limit": "MedPay amount",
+            "rental_reimbursement_limit": "Rental car reimbursement",
+            "towing_limit": "Towing and labor limit",
+            "OEM_parts_coverage": "Original Equipment Manufacturer parts endorsement (Y/N)",
+            "rideshare_coverage": "Rideshare coverage added? (Y/N)",
+            "new_car_protection": "New car replacement coverage? (Y/N)",
+            "gap_coverage": "Loan/lease gap coverage? (Y/N)"
+          }
+        ],
+        "prior_insurance": {
+          "prior_carrier_name": "Name of the previous insurer",
+          "prior_policy_number": "Policy number from previous insurer",
+          "years_continuously_insured": "Number of continuous years insured",
+          "any_lapses_in_coverage_YN": "Any lapses in coverage? (Y/N)",
+          "assigned_risk_pool_YN": "Assigned risk placement? (Y/N)"
+        },
+        "loss_accident_history": [
+          {
+            "driver_license_number": "License number of driver involved",
+            "event_type": "Accident or Violation",
+            "date": "Date of event",
+            "description": "Description of event",
+            "at_fault_YN": "Was the driver at-fault? (Y/N)",
+            "injuries_YN": "Were there injuries? (Y/N)",
+            "cost": "Total cost of the claim/incident"
+          }
+        ],
+        "general_questions": {
+          "any_vehicle_not_owned_by_applicant_YN": "Vehicle not owned by applicant? (Y/N)",
+          "vehicle_use_other_than_personal_YN": "Used for delivery, rideshare, etc.? (Y/N)",
+          "any_modifications_to_vehicle_YN": "Any vehicle modifications? (Y/N)",
+          "any_existing_vehicle_damage_YN": "Any pre-existing damage? (Y/N)",
+          "any_vehicles_uninsured_in_household_YN": "Uninsured vehicles in household? (Y/N)",
+          "prior_policy_cancelled_or_declined_YN": "Ever cancelled or declined insurance? (Y/N)",
+          "bankruptcy_or_judgment_last_5_years_YN": "Filed bankruptcy or judgments? (Y/N)",
+          "applicant_in_military_YN": "Applicant currently in military service? (Y/N)"
+        },
+        "signatures_attachments": {
+          "applicant_signature": "Signature of applicant",
+          "producer_signature": "Signature of insurance producer",
+          "date_signed": "Date application was signed",
+          "ACORD_99_attached": "Accident history supplement (if needed)",
+          "ACORD_101_attached": "Additional remarks form"
+        }
+      }
+    },
+    "Homeowners": {
+      "description": "This dictionary encapsulates every piece of information collected on a standard homeowners insurance application...",
+      "schema": {
+        "general_policy_information": {
+          "agency_name": "Name of the insurance agency",
+          "agency_contact_name": "Contact person at the agency",
+          "agency_phone": "Agency's phone number",
+          "agency_email": "Agency's email address",
+          "carrier_name": "Name of the insurance carrier",
+          "policy_number": "Unique policy number",
+          "payment_plan": "Payment plan selected (e.g., Annual, Monthly)",
+          "effective_date": "Policy start date",
+          "expiration_date": "Policy end date"
+        },
+        "named_insureds": [
+          {
+            "role": "Primary or Co-Applicant",
+            "full_name": "Full name of the insured",
+            "mailing_address": "Mailing address of the insured",
+            "city": "City of the insured's mailing address",
+            "state": "State of the insured's mailing address",
+            "zip_code": "ZIP code of the insured's mailing address",
+            "phone": "Insured's phone number",
+            "email": "Insured's email address",
+            "occupation": "Occupation of the insured",
+            "employer_name": "Name of the insured's employer",
+            "employer_address": "Address of the insured's employer"
+          }
+        ],
+        "applicant_details": {
+          "residence_status": "Ownership status of the residence (Owned/Rented)",
+          "years_at_current_address": "Number of years at the current address",
+          "previous_address": "Previous address if less than 3 years at current address"
+        },
+        "property_information": {
+          "location_address": "Address of the insured property",
+          "location_city": "City where the insured property is located",
+          "location_state": "State where the insured property is located",
+          "location_zip_code": "ZIP code of the insured property",
+          "location_county": "County where the insured property is located",
+          "construction_type": "Type of construction (e.g., Frame, Masonry)",
+          "year_built": "Year the property was built",
+          "purchase_date": "Date when the property was purchased",
+          "purchase_price": "Purchase price of the property",
+          "occupancy_type": "Occupancy status (Owner, Tenant, Seasonal, Farm)",
+          "square_footage": "Total square footage of the living area",
+          "number_of_stories": "Number of stories in the building",
+          "garage_type": "Type of garage (Attached, Detached, None)",
+          "basement_type": "Type of basement (Full, Partial, None)",
+          "roof_type": "Type of roof (e.g., Asphalt, Metal)",
+          "roof_age": "Age of the roof in years",
+          "heating_type": "Type of heating system (e.g., Gas, Electric)",
+          "electrical_system_type": "Type of electrical system",
+          "plumbing_system_type": "Type of plumbing system",
+          "market_value": "Market value of the property",
+          "replacement_cost": "Estimated replacement cost of the property"
+        },
+        "coverage_limits": {
+          "dwelling_coverage_limit": "Coverage limit for the dwelling",
+          "other_structures_coverage_limit": "Coverage limit for other structures",
+          "personal_property_coverage_limit": "Coverage limit for personal property",
+          "loss_of_use_coverage_limit": "Coverage limit for loss of use",
+          "personal_liability_limit": "Personal liability coverage limit",
+          "medical_payments_limit": "Medical payments coverage limit",
+          "deductible_amount": "Deductible amount",
+          "wind_hail_deductible": "Wind/hail deductible amount",
+          "theft_deductible": "Theft deductible amount",
+          "optional_coverages": "List of optional coverages selected",
+          "endorsements": "List of endorsements added to the policy",
+          "estimated_total_premium": "Estimated total premium for the policy"
+        },
+        "risk_safety_features": {
+          "fire_alarm_type": "Type of fire alarm system (Local, Central)",
+          "smoke_detectors": "Presence of smoke detectors (Yes/No)",
+          "burglar_alarm_type": "Type of burglar alarm system (Local, Central)",
+          "sprinkler_system": "Presence of a sprinkler system (Yes/No)",
+          "fire_extinguishers": "Presence of fire extinguishers (Yes/No)",
+          "deadbolts": "Presence of deadbolt locks (Yes/No)",
+          "lightning_protection": "Presence of lightning protection system (Yes/No)",
+          "pool_fencing": "Presence of pool fencing (Yes/No)",
+          "wind_mitigation_features": "Presence of wind mitigation features (Yes/No)"
+        },
+        "optional_coverages_endorsements": {
+          "equipment_breakdown_coverage": "Equipment breakdown coverage selected (Yes/No)",
+          "sewer_backup_coverage": "Sewer backup coverage selected (Yes/No)",
+          "ordinance_or_law_coverage": "Ordinance or law coverage selected (Yes/No)",
+          "identity_fraud_expense_coverage": "Identity fraud expense coverage selected (Yes/No)",
+          "scheduled_personal_property": "Scheduled personal property coverage details",
+          "home_business_endorsement": "Home business endorsement selected (Yes/No)",
+          "earthquake_coverage": "Earthquake coverage selected (Yes/No)",
+          "flood_coverage": "Flood coverage selected (Yes/No)"
+        },
+        "additional_interests": [
+          {
+            "name": "Name of the mortgagee or additional insured",
+            "address": "Address of the interest holder",
+            "loan_number": "Loan number associated with the interest",
+            "interest_type": "Type of interest (Mortgagee, Additional Insured, Loss Payee)"
+          }
+        ],
+        "loss_history": {
+          "prior_insurer_name": "Name of the prior insurance company",
+          "prior_policy_number": "Policy number of the prior insurance",
+          "prior_policy_expiration_date": "Expiration date of the prior policy",
+          "losses_in_last_5_years": "Any losses in the last 5 years (Yes/No)",
+          "loss_details": [
+            {
+              "date": "Date of the loss",
+              "type": "Type of loss (e.g., Fire, Theft)",
+              "amount": "Amount of the loss",
+              "description": "Description of the loss"
+            }
+          ],
+          "coverage_declined_or_cancelled": "Any coverage declined or cancelled in the last 3 years (Yes/No)"
+        },
+        "general_information": {
+          "business_conducted_on_premises": "Any business conducted on the premises (Yes/No)",
+          "residence_employees": "Presence of residence employees (Yes/No)",
+          "flood_or_fire_hazard": "Property located in flood or fire hazard area (Yes/No)",
+          "other_residences_owned": "Ownership of other residences (Yes/No)",
+          "animals_on_premises": "Presence of animals on the premises (Yes/No)",
+          "trampoline_on_premises": "Presence of a trampoline on the premises (Yes/No)",
+          "foreclosure_or_bankruptcy": "History of foreclosure or bankruptcy (Yes/No)",
+          "building_under_construction": "Building under construction or renovation (Yes/No)",
+          "uncorrected_fire_or_building_code_violations": "Any uncorrected fire or building code violations (Yes/No)"
+        },
+        "attachments_signatures": {
+          "applicant_signature": "Signature of the applicant",
+          "producer_signature": "Signature of the producer",
+          "date_signed": "Date when the application was signed",
+          "attachments_included": "List of any attachments included with the application"
+        }
+      }
+    },
+    "Commercial Property": {
+      "description": "A nested Python dictionary representing ACORD 125 and 140 data for a commercial policy...",
+      "schema": {
+        "ACORD_125_applicant_info": {
+          "insured_name": "Legal name of business/insured",
+          "DBA_name": "Doing Business As name (if applicable)",
+          "mailing_address": "Main business mailing address",
+          "phone_number": "Primary business contact number",
+          "email_address": "Business email address",
+          "FEIN": "Federal Employer Identification Number",
+          "business_structure": "Entity type (e.g., Corp, LLC, Sole Prop)",
+          "years_in_business": "How many years the business has been operating",
+          "website_url": "Business website (if applicable)",
+          "contact_person": "Main contact person for the business",
+          "inspection_contact_name": "Name of the contact for inspections",
+          "inspection_contact_phone": "Phone number for inspections"
+        },
+        "ACORD_125_policy_info": {
+          "agency_name": "Insurance agency issuing the policy",
+          "agency_code": "Code assigned to the agency",
+          "subcode": "Sub-agency code (if applicable)",
+          "carrier_name": "Insurance company writing the policy",
+          "NAIC_code": "NAIC code of the carrier",
+          "policy_number": "Policy identification number",
+          "effective_date": "Date the policy coverage begins",
+          "expiration_date": "Date the policy coverage ends",
+          "billing_type": "Billing type (Agency or Direct Bill)",
+          "payment_plan": "Payment terms (Annual, Quarterly, etc.)",
+          "premium": "Total premium for the policy",
+          "audit_type": "Audit method if applicable (Annual, Monthly)",
+          "quote_number": "Internal quote reference",
+          "policy_status": "Quote, Bound, Issued, etc."
+        },
+        "locations": [
+          {
+            "location_address": "Physical address of the insured location",
+            "building_number": "Building identifier",
+            "location_number": "Location reference number",
+            "property_description": "Brief description of the building/use",
+            "construction_type": "Construction type (Frame, Masonry, etc.)",
+            "building_code": "Building code classification",
+            "tax_code": "Tax code (if applicable)",
+            "year_built": "Year the building was originally constructed",
+            "number_of_stories": "Number of stories in the building",
+            "number_of_basements": "Number of basement levels",
+            "square_footage": "Total square footage of the structure",
+            "roof_type": "Type of roofing material",
+            "fire_protection_class": "Fire protection class",
+            "distance_to_fire_hydrant": "Measured in feet",
+            "distance_to_fire_station": "Measured in miles",
+            "sprinkler_system": "Presence of sprinkler system (Y/N)",
+            "fire_alarm_type": "Local, Central, None",
+            "burglar_alarm_type": "Local, Central, None",
+            "watchmen_or_security": "Any security guards or systems in place",
+            "occupancy_type": "Owner, Tenant, Vacant, etc.",
+            "other_occupancies": "Description of other business uses in the building",
+            "improvements_year_roof": "Year roof was last updated",
+            "improvements_year_plumbing": "Year plumbing was last updated",
+            "improvements_year_heating": "Year heating was last updated",
+            "improvements_year_wiring": "Year wiring was last updated",
+            "flood_zone": "Flood zone classification",
+            "coverage_info": {
+              "building_limit_of_insurance": "Coverage amount for the building",
+              "business_personal_property_limit": "Coverage amount for BPP",
+              "coverage_form": "Basic, Broad, or Special",
+              "coinsurance_percentage": "Coinsurance rate",
+              "valuation_method": "ACV, RC, Agreed Value",
+              "deductible": "General property deductible",
+              "windstorm_or_hail_deductible": "Special deductible for these perils",
+              "inflation_guard": "% for automatic increase",
+              "blanket_coverage": "Whether it’s a blanket policy (Y/N)",
+              "reporting_form": "Value reporting form type"
+            },
+            "optional_coverages": {
+              "spoilage_coverage": "Yes/No with limit",
+              "equipment_breakdown_limit": "Coverage limit if included",
+              "ordinance_or_law_coverage": "Included amount or %",
+              "business_income_limit": "BI coverage limit",
+              "extra_expense_limit": "EE coverage limit",
+              "leasehold_interest": "Coverage for leasehold interest",
+              "value_reporting": "Yes/No"
+            }
+          }
+        ],
+        "additional_interests": [
+          {
+            "name": "Name of mortgagee or lienholder",
+            "address": "Address of mortgagee",
+            "loan_number": "Associated loan reference number",
+            "interest_type": "Type of interest (Mortgagee, Additional Insured)",
+            "certificate_required": "Is certificate required (Y/N)"
+          }
+        ]
+      }
+    },
+    "Workers Compensation": {
+      "description": "A nested Python dictionary capturing ACORD 125, 130, and related sections for a workers' compensation application...",
+      "schema": {
+        "ACORD_125_applicant_info": {
+          "insured_name": "Legal name of business/insured",
+          "DBA_name": "Doing Business As name",
+          "mailing_address": "Main business mailing address",
+          "phone_number": "Primary business contact number",
+          "email_address": "Business email address",
+          "FEIN": "Federal Employer Identification Number",
+          "business_structure": "Entity type (e.g., Corp, LLC, Sole Prop)",
+          "years_in_business": "How many years the business has been operating",
+          "website_url": "Business website",
+          "contact_person": "Primary contact name",
+          "inspection_contact_name": "Name of person for inspections",
+          "inspection_contact_phone": "Phone number for inspections"
+        },
+        "ACORD_125_policy_info": {
+          "agency_name": "Insurance agency issuing the policy",
+          "agency_code": "Code assigned to the agency",
+          "subcode": "Sub-agency code (if applicable)",
+          "carrier_name": "Insurance company",
+          "NAIC_code": "Carrier’s NAIC code",
+          "policy_number": "Unique policy identification number",
+          "effective_date": "Policy start date",
+          "expiration_date": "Policy expiration date",
+          "billing_type": "Agency or Direct Bill",
+          "payment_plan": "Annual, Monthly, etc.",
+          "policy_status": "Quote, Bound, Issued",
+          "premium": "Total policy premium"
+        },
+        "ACORD_130_general_info": {
+          "other_entity_names": "Any additional entities included in coverage",
+          "description_of_operations": "Business type and operations",
+          "NCCI_risk_id": "If applicable",
+          "SIC_code": "SIC code",
+          "NAICS_code": "NAICS code",
+          "years_in_current_operations": "Duration in current business type",
+          "states_to_cover": "States where WC coverage is needed",
+          "other_states": "Additional states requested for Part 3",
+          "voluntary_compensation_coverage": "Yes/No option",
+          "employers_liability_limit_accident": "BI per accident",
+          "employers_liability_limit_disease_policy": "Disease policy aggregate limit",
+          "employers_liability_limit_disease_employee": "Disease limit per employee",
+          "prior_carrier_name": "Previous WC insurer",
+          "prior_policy_number": "Policy # from previous coverage",
+          "prior_policy_expiration_date": "Expiry date of last policy",
+          "experience_mod_factor": "MOD rating",
+          "#_of_claims_last_5_years": "Total claim count",
+          "total_paid_on_claims": "Amount paid",
+          "total_reserved_on_claims": "Reserve amounts",
+          "loss_runs_attached": "Yes/No",
+          "premium_basis": "Basis for premium (payroll, etc.)",
+          "audit_type": "Annual, Monthly, etc.",
+          "subcontractors_used": "Yes/No"
+        },
+        "locations": [
+          {
+            "location_number": "Location identifier",
+            "address": "Street address",
+            "city": "City where work is performed",
+            "state": "State",
+            "zip_code": "ZIP code",
+            "duties_performed": "Description of operations",
+            "class_codes": [
+              {
+                "class_code": "WC classification code",
+                "description": "Duties performed",
+                "employees_full_time": "Count of FT employees",
+                "employees_part_time": "Count of PT employees",
+                "estimated_annual_payroll": "Payroll for this class code",
+                "rate_per_100_payroll": "Rate applied to payroll",
+                "estimated_annual_premium": "Manual premium calculated"
+              }
+            ]
+          }
+        ],
+        "individuals_inclusion_exclusion": [
+          {
+            "name": "Name of owner, partner, officer",
+            "title": "Title or relationship",
+            "ownership_percentage": "% ownership",
+            "included_or_excluded": "Whether included or excluded from WC",
+            "payroll": "Payroll assigned (if included)",
+            "class_code": "WC class assigned",
+            "state": "State where they are located"
+          }
+        ],
+        "contact_information": {
+          "accounting_contact_name": "For billing/account matters",
+          "accounting_contact_phone": "Contact number",
+          "claims_contact_name": "Claims contact name",
+          "claims_contact_phone": "Phone number",
+          "inspection_contact_name": "Contact for site inspections",
+          "inspection_contact_phone": "Phone number"
+        },
+        "general_risk_questions": {
+          "uses_subcontractors": "Do they subcontract work? (Y/N)",
+          "has_leased_employees": "Are leased employees used?",
+          "volunteers_used": "Any volunteers?",
+          "any_exposure_outside_state": "Business in other states?",
+          "formal_safety_program": "Written safety plan in place?",
+          "recent_bankruptcy_or_liens": "Bankruptcy/tax issues in past 5 years",
+          "business_under_new_ownership": "Management/ownership changes?",
+          "prior_coverage_declined_or_cancelled": "Previous declination/cancellation"
+        },
+        "signatures_attachments": {
+          "applicant_signature": "Authorized applicant sign-off",
+          "producer_signature": "Agent signature",
+          "ACORD_101_attached": "Additional remarks or attachments",
+          "loss_run_attached": "Documented loss history"
+        }
+      }
+    },
+    "General Liability": {
+      "description": "A nested Python dictionary capturing ACORD 125, 126, and related sections for a commercial general liability application...",
+      "schema": {
+        "ACORD_125_applicant_info": {
+          "insured_name": "Legal name of the business or entity",
+          "DBA_name": "Doing Business As name (if applicable)",
+          "mailing_address": "Primary business mailing address",
+          "phone_number": "Main business contact number",
+          "email_address": "Business email address",
+          "FEIN": "Federal Employer Identification Number",
+          "business_structure": "Entity type (e.g., Corporation, LLC, Partnership, etc.)",
+          "years_in_business": "How many years in operation",
+          "website_url": "Company website (if applicable)",
+          "contact_person": "Primary business contact person",
+          "inspection_contact_name": "Contact for inspections",
+          "inspection_contact_phone": "Inspection contact's phone number"
+        },
+        "ACORD_125_policy_info": {
+          "agency_name": "Insurance agency writing the policy",
+          "agency_code": "Code assigned to the agency",
+          "subcode": "Sub-agency code (if any)",
+          "carrier_name": "Name of the insurance company",
+          "NAIC_code": "NAIC identifier for the carrier",
+          "policy_number": "Identifier assigned to the policy",
+          "effective_date": "Start date of the coverage",
+          "expiration_date": "End date of the coverage",
+          "billing_type": "Direct Bill or Agency Bill",
+          "payment_plan": "Annual, Quarterly, Monthly, etc.",
+          "quote_number": "Internal reference quote ID",
+          "policy_status": "Quote / Bound / Issued / Cancelled",
+          "premium": "Total policy premium"
+        },
+        "ACORD_126_general_info": {
+          "claims_made_form": "Is this a claims-made form? (Y/N)",
+          "occurrence_form": "Is this an occurrence form? (Y/N)",
+          "retroactive_date": "If claims-made, enter retro date",
+          "entry_date_into_claims_made": "Start date of continuous coverage",
+          "tail_coverage_purchased": "Has tail coverage been purchased? (Y/N)",
+          "per_location_or_project_aggregate": "Are limits per project/location?",
+          "deductible_type": "Type of deductible (Per Claim / Per Occurrence)",
+          "deductible_amount_bi_pd": "Deductible for BI/PD claims",
+          "other_deductible_description": "If other, describe and specify deductible"
+        },
+        "ACORD_126_limits": {
+          "general_aggregate_limit": "Maximum total for all claims in policy period",
+          "products_completed_operations_aggregate_limit": "Max for products & completed operations claims",
+          "personal_advertising_injury_limit": "Limit for personal or advertising injury claims",
+          "each_occurrence_limit": "Per occurrence BI/PD limit",
+          "damage_to_rented_premises_limit": "Damage to rented premises (each occurrence)",
+          "medical_expense_limit": "Limit for medical expense per person",
+          "employee_benefits_liability_limit": "If added, specify limit"
+        },
+        "employee_benefits_liability": {
+          "ebl_deductible_per_claim": "EBL-specific deductible",
+          "ebl_retroactive_date": "Retroactive date for EBL",
+          "ebl_number_of_employees": "Total employees under EBL",
+          "ebl_number_covered": "# employees covered"
+        },
+        "schedule_of_hazards": [
+          {
+            "location_number": "Location reference",
+            "hazard_number": "Hazard ref.",
+            "classification_description": "Description of exposure (e.g., Contractor, Store)",
+            "class_code": "Classification code",
+            "premium_basis": "Basis (A=Area, P=Payroll, S=Sales, U=Units, etc.)",
+            "exposure": "Numeric exposure basis value",
+            "rate_prem_ops": "Rate for premises/operations liability",
+            "rate_products": "Rate for products liability",
+            "premium_prem_ops": "Advance premium for premises/operations",
+            "premium_products": "Advance premium for products liability"
+          }
+        ],
+        "contractors_info": {
+          "full_time_employees_count": "Number of FT workers",
+          "part_time_employees_count": "Number of PT workers",
+          "percent_work_subcontracted": "Percentage subcontracted",
+          "subcontractor_payroll": "Total paid to subcontractors",
+          "type_of_work_subcontracted": "What type of work is subcontracted",
+          "subcontractors_carry_lower_limits": "Do they carry lower limits than required? (Y/N)",
+          "COI_required_from_subcontractors": "Are certificates of insurance required? (Y/N)",
+          "lease_equipment_to_others": "Does applicant lease equipment? (Y/N)",
+          "lease_with_operators": "Is it leased with operators? (Y/N)",
+          "does_work_involve_explosives_or_underpinning": "Any hazardous exposures? (Y/N)",
+          "design_or_supervise_for_fee": "Design, supervise, manage for a fee? (Y/N)"
+        },
+        "products_completed_operations": [
+          {
+            "product_name": "Name or description of product",
+            "gross_sales": "Annual gross sales",
+            "units_sold": "Number of units sold",
+            "time_in_market": "Months product has been sold",
+            "expected_product_life": "Estimated use life",
+            "intended_use": "Description of how product is used",
+            "product_components": "Main components/materials",
+            "install_or_demonstrate_product": "Installed or demoed by insured? (Y/N)",
+            "foreign_sales": "Foreign exposure? (Y/N)",
+            "related_to_aircraft_or_space": "Related to aerospace? (Y/N)",
+            "vendor_additional_insured_required": "Vendor coverage needed? (Y/N)",
+            "recall_or_discontinued": "Product recall/change? (Y/N)",
+            "sold_under_other_label": "White label/private label? (Y/N)",
+            "new_products_or_R&D": "R&D plans for new products? (Y/N)"
+          }
+        ],
+        "general_info_questions": {
+          "has_pool": "Swimming pool present? (Y/N)",
+          "does_business_have_athletic_team": "Sports teams sponsored? (Y/N)",
+          "conducts_daycare": "Daycare offered? (Y/N)",
+          "sponsors_social_events": "Social/recreational activities? (Y/N)",
+          "structural_alterations": "Alteration/demolition plans? (Y/N)",
+          "holds_harmless_others": "Any indemnity obligations? (Y/N)",
+          "business_has_written_safety_procedures": "Written safety program? (Y/N)",
+          "prior_claims_or_losses": "Any claims/losses in last 3 years?",
+          "made_representations_about_security": "Safety representations in ads? (Y/N)",
+          "prior_declination_or_cancellation": "Declined, canceled, or non-renewed? (Y/N)"
+        },
+        "additional_interests": [
+          {
+            "name": "Name of mortgagee, loss payee, etc.",
+            "address": "Their address",
+            "interest_type": "Type (Mortgagee, Additional Insured)",
+            "certificate_required": "Certificate required (Y/N)",
+            "reference_number": "Associated policy or loan number"
+          }
+        ],
+        "attachments_signatures": {
+          "applicant_signature": "Signature of the insured",
+          "producer_signature": "Signature of the producer",
+          "date_signed": "Date the form was signed",
+          "ACORD_101_attached": "Additional remarks form attached (Y/N)"
+        }
+      }
+    },
+    "Umbrella Excess": {
+      "description": "A nested Python dictionary capturing ACORD 125 and 131 sections for a commercial umbrella/excess liability application...",
+      "schema": {
+        "ACORD_125_applicant_info": {
+          "insured_name": "Legal business name",
+          "DBA_name": "Doing Business As name (if applicable)",
+          "mailing_address": "Primary business mailing address",
+          "phone_number": "Business contact number",
+          "email_address": "Business email address",
+          "FEIN": "Federal Employer Identification Number",
+          "business_structure": "Type of entity (Corp, LLC, etc.)",
+          "years_in_business": "How long the business has been operating",
+          "website_url": "Company website (if applicable)",
+          "contact_person": "Main business contact",
+          "inspection_contact_name": "Person to contact for inspection",
+          "inspection_contact_phone": "Phone number for inspection contact"
+        },
+        "ACORD_125_policy_info": {
+          "agency_name": "Insurance agency name",
+          "agency_code": "Code assigned to the agency",
+          "subcode": "Subcode for sub-agency",
+          "carrier_name": "Insurance carrier",
+          "NAIC_code": "Carrier NAIC code",
+          "policy_number": "Policy identifier",
+          "effective_date": "Policy start date",
+          "expiration_date": "Policy end date",
+          "billing_type": "Direct or Agency billing",
+          "payment_plan": "Annual, Monthly, etc.",
+          "quote_number": "Reference quote number",
+          "policy_status": "Bound, Issued, etc."
+        },
+        "ACORD_131_limits": {
+          "umbrella_limit_requested": "Total umbrella or excess limit requested",
+          "retained_limit": "Self-insured retention amount",
+          "retention_type": "Type of retention (Self-insured or Deductible)"
+        },
+        "underlying_policies": [
+          {
+            "type": "General Liability / Auto Liability / Employers Liability / Other",
+            "policy_number": "Underlying policy number",
+            "carrier": "Insurance carrier for the underlying policy",
+            "limit": "Limit of the underlying policy"
+          }
+        ],
+        "ACORD_131_schedule_of_hazards": {
+          "excess_territory": "Coverage territory",
+          "products_exposure": "Are products covered? (Y/N)",
+          "claims_made_coverage": "Claims-made basis coverage included? (Y/N)",
+          "prior_claims_or_losses": "Any umbrella-related losses? (Y/N)",
+          "loss_details": "Description of prior umbrella-related losses"
+        },
+        "additional_interests": [
+          {
+            "name": "Name of additional insured or interest",
+            "interest_type": "Type of interest (e.g., Additional Insured, Mortgagee)",
+            "certificate_required": "Certificate of insurance required? (Y/N)"
+          }
+        ],
+        "signatures_attachments": {
+          "applicant_signature": "Signature of the applicant",
+          "producer_signature": "Signature of the agent/producer",
+          "ACORD_101_attached": "ACORD 101 form attached? (Y/N)"
+        }
+      }
+    },
+    "Cyber Liability": {
+      "description": "A nested Python dictionary capturing key fields for a cyber liability insurance application...",
+      "schema": {
+        "applicant_info": {
+          "insured_name": "Legal business name",
+          "DBA_name": "Doing Business As name (if applicable)",
+          "mailing_address": "Business mailing address",
+          "phone_number": "Primary contact number",
+          "email_address": "Business email address",
+          "FEIN": "Federal Employer Identification Number",
+          "business_structure": "Type of business entity (LLC, Corp, etc.)",
+          "years_in_business": "Number of years the business has operated",
+          "website_url": "Business website",
+          "contact_person": "Cyber coverage contact"
+        },
+        "policy_info": {
+          "carrier_name": "Cyber liability carrier name",
+          "policy_number": "Policy number (if existing)",
+          "effective_date": "Policy effective date",
+          "expiration_date": "Policy expiration date",
+          "requested_limit": "Requested policy limit",
+          "requested_retention": "Requested retention/deductible",
+          "prior_policy_expiration_date": "Expiry date of prior policy (if applicable)",
+          "retroactive_date": "Retroactive date (if claims-made)"
+        },
+        "exposure_info": {
+          "industry_classification": "Business industry type",
+          "total_employees": "Total number of employees",
+          "annual_revenue": "Annual gross revenue",
+          "number_of_records": "Number of PII/PHI records held",
+          "third_party_IT_providers": "Names of outsourced IT/security vendors",
+          "data_encryption_YN": "Are records encrypted at rest and in transit? (Y/N)",
+          "MFA_implementation": "Is multi-factor authentication in place? (Y/N)",
+          "firewall_installed_YN": "Are firewalls installed? (Y/N)",
+          "antivirus_installed_YN": "Antivirus/malware protection in use? (Y/N)",
+          "backups_frequency": "Frequency of data backups (Daily, Weekly, etc.)",
+          "employee_cyber_training": "Do employees receive cybersecurity training? (Y/N)",
+          "incident_response_plan": "Do you have an incident response plan? (Y/N)",
+          "prior_cyber_claims_YN": "Any prior cyber claims/losses? (Y/N)",
+          "prior_cyber_claims": [
+            {
+              "date": "Date of loss or breach",
+              "description": "Details of the cyber loss or breach",
+              "cost": "Total financial impact"
+            }
+          ]
+        },
+        "requested_coverages": {
+          "network_security_and_privacy": "Coverage for data breach/security failures (Y/N)",
+          "media_liability": "Coverage for media content errors (Y/N)",
+          "regulatory_proceedings": "Coverage for regulatory fines/penalties (Y/N)",
+          "business_interruption": "Coverage for lost income from downtime (Y/N)",
+          "system_failure_coverage": "System outage coverage (non-malicious) (Y/N)",
+          "cyber_extortion": "Coverage for ransomware/extortion events (Y/N)",
+          "social_engineering_fraud": "Coverage for phishing scams/social fraud (Y/N)",
+          "reputational_harm": "Coverage for PR/brand recovery (Y/N)",
+          "PCI_fines_and_penalties": "Coverage for PCI DSS violations (Y/N)",
+          "dependent_business_interruption": "BI loss due to vendor failure (Y/N)"
+        },
+        "attachments_signatures": {
+          "loss_run_attached": "Is prior loss run attached? (Y/N)",
+          "supplemental_app_attached": "Carrier supplemental form completed? (Y/N)",
+          "IT_security_report_attached": "Recent IT security audit attached? (Y/N)",
+          "applicant_signature": "Signature of applicant",
+          "producer_signature": "Signature of producer"
+        }
+      }
+    },
+    "Professional Liability": {
+      "description": "A nested Python dictionary capturing key fields for an Errors & Omissions (E&O) liability insurance application...",
+      "schema": {
+        "applicant_info": {
+          "insured_name": "Legal business name",
+          "DBA_name": "Doing Business As name (if applicable)",
+          "mailing_address": "Mailing address of the business",
+          "phone_number": "Primary contact number",
+          "email_address": "Business email address",
+          "FEIN": "Federal Employer Identification Number",
+          "business_structure": "Corporation, LLC, Sole Proprietorship, etc.",
+          "years_in_business": "Total years in business",
+          "website_url": "Business website",
+          "contact_person": "Primary contact for this application"
+        },
+        "policy_info": {
+          "carrier_name": "Insurer providing the policy",
+          "policy_number": "Policy number (if renewing)",
+          "effective_date": "Start date of the policy",
+          "expiration_date": "End date of the policy",
+          "requested_limit": "Desired limit of liability",
+          "requested_deductible": "Requested deductible",
+          "retroactive_date": "Retroactive (prior acts) date",
+          "current_EO_carrier": "Current/prospective E&O insurer",
+          "current_EO_limit": "Current policy limit",
+          "current_EO_deductible": "Current deductible"
+        },
+        "operations_services_info": {
+          "professional_services_offered": "Description of services provided",
+          "licensing_required_YN": "Are professional licenses required? (Y/N)",
+          "licensed_employees_count": "Number of licensed professionals",
+          "total_staff_count": "Total employees (including admin)",
+          "average_years_experience": "Average professional experience in years",
+          "states_of_operation": "States where services are rendered",
+          "percentage_of_services_by_type": "Breakdown by service category (% consulting, % design, etc.)",
+          "third_party_contracts_YN": "Do you use third-party contractors? (Y/N)",
+          "subcontractor_insurance_requirements": "Do you require subcontractors to carry E&O? (Y/N)",
+          "use_of_disclaimers_or_limitations": "Use of client disclaimers or limitation-of-liability clauses? (Y/N)"
+        },
+        "client_management_info": {
+          "written_contract_used_YN": "Are written contracts used with clients? (Y/N)",
+          "contract_reviewed_by_legal_YN": "Are contracts reviewed by legal counsel? (Y/N)",
+          "percentage_clients_with_contracts": "% of clients with written contracts",
+          "largest_client_revenue_percentage": "% of revenue from largest client",
+          "number_of_active_clients": "Total active clients",
+          "use_of_independent_quality_control": "Is there a quality control process in place? (Y/N)"
+        },
+        "claim_history": {
+          "prior_claims_YN": "Any prior E&O claims made? (Y/N)",
+          "prior_claims": [
+            {
+              "date": "Date of claim",
+              "description": "Description of the claim",
+              "status": "Open/Closed",
+              "amount": "Total amount paid or reserved"
+            }
+          ],
+          "open_claims_YN": "Any pending claims? (Y/N)",
+          "knowledge_of_incident_YN": "Any knowledge of potential incidents? (Y/N)",
+          "incident_description": "Explanation of known incidents"
+        },
+        "risk_management_practices": {
+          "employee_training_program_YN": "Formal employee training program in place? (Y/N)",
+          "client_screening_process_YN": "Do you vet or screen clients? (Y/N)",
+          "regular_internal_audits_YN": "Are internal audits conducted? (Y/N)",
+          "regulatory_compliance_YN": "Is business subject to regulatory oversight? (Y/N)"
+        },
+        "requested_coverages": {
+          "disciplinary_proceedings_coverage": "Coverage for disciplinary proceedings (Y/N)",
+          "copyright_infringement_coverage": "Coverage for IP or copyright issues (Y/N)",
+          "privacy_breach_coverage": "Coverage for privacy breaches (Y/N)",
+          "defense_outside_limit_YN": "Defense costs outside the limit (Y/N)"
+        },
+        "attachments_signatures": {
+          "resume_or_cv_of_key_persons": "Are resumes attached? (Y/N)",
+          "list_of_current_projects": "List of current key projects (Y/N)",
+          "sample_contract_attached": "Are sample contracts included? (Y/N)",
+          "loss_run_attached": "Are loss runs from prior carriers attached? (Y/N)",
+          "supplemental_app_attached": "Is full supplemental application included? (Y/N)",
+          "applicant_signature": "Signature of the applicant",
+          "producer_signature": "Signature of the insurance producer"
+        }
+      }
+    },
+    "Directors & Officers": {
+      "description": "A nested Python dictionary capturing key fields for a Directors & Officers (D&O) liability insurance application...",
+      "schema": {
+        "applicant_info": {
+          "insured_name": "Legal business name",
+          "DBA_name": "Doing Business As name (if applicable)",
+          "mailing_address": "Mailing address of the business",
+          "phone_number": "Contact phone number",
+          "email_address": "Contact email address",
+          "FEIN": "Federal Employer Identification Number",
+          "business_structure": "Entity type (Corp, LLC, Non-profit, Public, Private)",
+          "years_in_business": "Number of years in operation",
+          "website_url": "Company website",
+          "contact_person": "Primary contact for this application"
+        },
+        "policy_info": {
+          "carrier_name": "Insurer name",
+          "policy_number": "Policy number (if existing)",
+          "effective_date": "Desired start date",
+          "expiration_date": "Desired end date",
+          "requested_limit": "Desired limit of liability",
+          "requested_retention": "Requested deductible/retention",
+          "retroactive_date": "Retroactive date (if claims-made)",
+          "is_shared_limit_with_EPLI_YN": "Shared limits with EPLI policy? (Y/N)"
+        },
+        "corporate_structure_info": {
+          "entity_type": "Public, Private, Nonprofit, LLC, etc.",
+          "number_of_employees": "Total number of employees",
+          "number_of_directors_officers": "Total D&Os covered",
+          "countries_of_operation": "Countries the company operates in",
+          "has_foreign_operations_YN": "Operations outside U.S.? (Y/N)",
+          "parent_company_YN": "Is there a parent company? (Y/N)",
+          "subsidiary_YN": "Are there subsidiaries? (Y/N)",
+          "list_of_subs_attached_YN": "Subsidiary list attached? (Y/N)"
+        },
+        "financial_info": {
+          "most_recent_fiscal_year_end_date": "Latest financial year end",
+          "total_assets": "Total assets",
+          "total_liabilities": "Total liabilities",
+          "total_equity": "Total equity",
+          "net_income": "Net income for the year",
+          "revenue": "Annual revenue",
+          "audited_financials_YN": "Are financials independently audited? (Y/N)",
+          "public_filings_YN": "Any pending or recent SEC filings? (Y/N)"
+        },
+        "litigation_history": {
+          "prior_D&O_claims_YN": "Any prior D&O-related claims? (Y/N)",
+          "prior_claims": [
+            {
+              "date": "Date of claim",
+              "description": "Summary of past D&O claim",
+              "status": "Open/Closed",
+              "amount": "Total amount paid or reserved"
+            }
+          ],
+          "open_litigation_YN": "Any current or pending lawsuits? (Y/N)",
+          "known_incidents_YN": "Knowledge of any incidents that could give rise to claims? (Y/N)",
+          "bankruptcy_or_insolvency_YN": "Any history of bankruptcy or insolvency? (Y/N)",
+          "merger_acquisition_activity_YN": "Any M&A activity in last 12 months? (Y/N)"
+        },
+        "corporate_governance": {
+          "bylaws_adopted_YN": "Has the company adopted bylaws? (Y/N)",
+          "indemnification_provided_YN": "Does company indemnify D&Os? (Y/N)",
+          "independent_directors_present_YN": "Are there independent directors on the board? (Y/N)",
+          "internal_controls_in_place_YN": "Are internal financial controls established? (Y/N)",
+          "audit_committee_YN": "Does company have an audit committee? (Y/N)",
+          "risk_management_procedures_YN": "Are formal risk controls in place? (Y/N)"
+        },
+        "requested_coverage": {
+          "Side_A_limit": "Limit requested for Side A coverage",
+          "Side_B_limit": "Limit requested for Side B coverage",
+          "Side_C_entity_coverage_YN": "Entity coverage for securities claims? (Y/N)",
+          "shared_or_separate_limits_YN": "Separate limits per Side? (Y/N)",
+          "coverage_for_outside_directorships_YN": "Coverage for D&Os serving other boards? (Y/N)"
+        },
+        "attachments_signatures": {
+          "list_of_directors_officers_attached": "Full list of directors and officers included? (Y/N)",
+          "most_recent_financials_attached": "Are audited financials attached? (Y/N)",
+          "litigation_schedule_attached": "Are litigation details attached? (Y/N)",
+          "loss_history_attached": "Prior loss runs included? (Y/N)",
+          "supplemental_application_attached": "Full D&O supplement attached? (Y/N)",
+          "applicant_signature": "Signature of authorized representative",
+          "producer_signature": "Signature of insurance agent"
+        }
+      }
+    }
+  }
